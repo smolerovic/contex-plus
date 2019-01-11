@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+.first-section{
+    background: url('../../images/section_one.png') no-repeat bottom center;
+    background-size: cover;
+    padding: 30px 30px 50px;
+}
+.second-section{
+    background: url('../../images/section_two.png') no-repeat bottom center;
+    background-size: cover;
+    padding: 30px 30px 50px;
+}
+.thirt-section{
+    background: url('../../images/section_three.png') no-repeat bottom center;
+    background-size: cover;
+    padding: 30px 30px 50px;
+}
+.li-check:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+    color: black;
+  }
+.li-check{
+      list-style: none;
+}
+.border-right-custom{
+    border-right: 1px solid #dee2e6;
+  }
+@media only screen and  ( max-width: 767px ) {
+    .border-right-custom{
+        border-right: none;
+    }
+}

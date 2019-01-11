@@ -1,0 +1,111 @@
+@import '../../styles/variables';
+
+.topcina{
+    color: #ff7713;
+    font-size: 20px;
+}
+.a-footer{
+    color: #ff7713;
+    margin-left: 5px;
+    cursor: pointer;
+}
+  .radi{
+    width: 235px;
+    height: 335px;
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+    display: none;
+    z-index: 1001;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.30);
+  }
+  .gornji{
+    cursor: default;
+    height: 84px;
+    background-color:#009be3;
+    background-image: linear-gradient(#009be3, #0088e3);
+  }
+  .donji{
+    cursor: default;
+    height: 250px;
+    background-color:#171717;
+    background-image: linear-gradient(#171717, #1c1c1c);
+  }
+  .stefan-molerovic{
+    text-align: center;
+    font-size: 23px;
+    padding-top: 58px;
+    color: $white;
+    margin-bottom: 15px;
+  }
+  .linked-in{
+    position: absolute;
+    width: 91px;
+    left: 16px;
+    bottom: 38px;
+  }
+  .facebook-footer{
+    width: 94px;
+    position: absolute;
+    bottom: 40px;
+    right: 15px;
+  }
+  .facebook-footer:hover, .linked-in:hover{
+    opacity: 0.7;
+  }
+  .front-end{
+    text-align: center;
+    color: $white;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 18px;
+  }
+  .krug{
+    cursor: default;
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    background: $white;
+    border-radius: 50%;
+    right: 57px;
+    top: 15px;
+    border: 7px solid #171717;
+  }
+  .a-footer:hover .radi{
+    display: block;
+  }
+  
+  .nevidljivi{
+    height: 30px;
+  }
+  .donji::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #171717;
+    bottom: -7px;
+    right: 50px;
+    z-index: 5;
+    margin-left: -15px;
+  }
+  .stefan-krug{
+    position: absolute;
+    right: -55.5px;
+    top: -19px;
+    width: 222px;
+    height: auto;
+  }
+  .li-parent-color{
+      a{
+          color: #ff7713;
+      }
+      a:hover{
+        color: #ff7713;
+    }
+  }

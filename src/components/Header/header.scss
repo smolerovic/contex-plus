@@ -1,0 +1,175 @@
+@import '../../styles/variables';
+
+.link-hover{
+    line-height: 80px;
+    color: #444444;
+}
+.link-hover:hover{
+    text-decoration: none;
+    color: #ff7713;
+    .nav-hover{
+        display: block;
+        height: 4px;
+        position: absolute;
+        background-color: #ff7713;
+        width: 100%;
+        top: -4px;
+        right: 0px;
+        left: 0px;
+        transition-duration: 0.4s;
+    }
+}
+.border-desni{
+    border-right: 1px solid rgba(0,0,0,.05);
+    padding-right: 1rem;
+}
+.fa{
+    color: #bbbbbb;
+}
+.a-color-hover{
+    font-size: 14px;
+    color: #ff7713;
+}
+.a-color-hover:hover{
+    color: #ff7713;
+}
+.active{
+    color: #ff7713;
+    .nav-hover{
+        display: block;
+        height: 4px;
+        position: absolute;
+        background-color: #ff7713;
+        width: 100%;
+        top: -4px;
+        right: 0px;
+        left: 0px;
+        transition-duration: 0.4s;
+    }
+  }
+.position-container{
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+}
+.background-header{
+    background-size: cover;
+    background-image: url('../../images/home_school.jpg');
+    background-position: center top;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+    background-repeat: no-repeat;
+}
+
+
+.hamburger{
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 24px;
+    background: #ff7713;
+    border-radius: 9px;
+    opacity: 1;
+    left: 7px
+  }
+  .hamburger:first-child{
+    top: 10px;
+  }
+  .hamburger:nth-child(2){
+    top: 18px;
+  }
+  .hamburger:nth-child(3){
+    top: 26px;
+  }
+  .button-header-hamburger{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+  }
+  .button-header-hamburger:hover{
+    opacity: 0.8;
+  }
+
+.imate-pitanja{
+    font-size: 15px;
+    color: #bbbbbb;
+}
+.nav-changed-position{
+    margin: 0px;
+    position: relative;
+}
+.background-white-responsive{
+    padding: 1.5rem 0rem 1.5rem 0rem;
+}
+.fixed-top-new{
+    .active{
+        .nav-hover{
+            bottom: -4px;
+            top: auto;
+        }
+    }
+}
+@media only screen and  ( min-width: 992px ) {
+    .fixed-top-new{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+        -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+    }
+    .white-hover:hover{
+        color: white;
+    }
+}
+@media only screen and  ( max-width: 991px ) {
+    .max-width-container{
+        max-width: 100%;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+    .logo-responsive{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .imate-pitanja{
+        display: none;
+    }
+    .background-white-responsive{
+        background: white;
+        padding: 0.5rem 0rem 1rem 0.5rem;
+    }
+    .nav-changed-position{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .navbar-collapse{
+        .link-hover{
+            line-height: 18px;
+        }
+        .border-desni{
+            border-right: none;
+        }
+    }
+    .navbar-expand-lg{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and  ( max-width: 767px ) {
+    .background-white-responsive{
+        padding: 0.5rem 0rem 0rem 0.5rem;
+        div{
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,132 @@
+@import 'base';
+@import 'variables';
+
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+$primaryLightColor: #202020;
+$primaryDarkColor: #272727;
+
+body {
+  background: white center no-repeat;
+  font-family: $font-family-sans-serif;
+}
+
+hr{
+  width: 100%;
+  border-color: rgba(255,255,255,.1);
+}
+
+h3, h2{
+  color: white;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.font-size-15{
+  font-size: 15px;
+}
+
+.form-control{
+  background-color: rgba(249, 249, 249, 1);
+  border-color: transparent;
+  font-weight: 500;
+  border-radius: 0px;
+  color: black;
+}
+.form-control:focus{
+  background-color: rgba(255,119,19, 0.2);
+  box-shadow: none;
+  font-weight: 500;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-weight: 400;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-weight: 400;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-weight: 400;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-weight: 400;
+}
+
+textarea{
+  overflow: hidden;
+  min-height: 137px;
+  resize: none;
+  font-family: $font-family-sans-serif;
+}
+
+.btn{
+  background-color: #FF7713;
+  color: white;
+  border-radius: 0px;
+  transition: color 0.3s ease;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: rgba(0,0,0,.05);
+  z-index: 1;
+  transition: all .4s;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+input{
+  height: 42px;
+}
+
+h1, h2, h3, h4, .font-family-fensy{
+  font-family: $fancy-font;
+}
+h1{
+  font-weight: bold;
+}
+p{
+  color: white;
+}
+.fa-facebook-f:hover{
+  color: #777777;
+}
+.fa-instagram:hover{
+  color: #777777;
+}
+button:focus{
+  outline: none;
+}
+@media only screen and  ( max-width: 575px ) {
+  .pl-xs-0{
+    padding-left: 0px;
+  }
+  .pr-xs-0{
+    padding-right: 0px;
+  }
+}

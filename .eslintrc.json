@@ -1,0 +1,55 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "parser": "babel-eslint",
+    "settings": {
+      "react" : {
+        "version": "16.5.2"
+      }
+    },
+    "extends": ["eslint:recommended", "plugin:react/recommended", "standard", "standard-react"],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "babel",
+        "react",
+        "promise"
+    ],
+    "globals": {
+        "process": false,
+        "it": false,
+        "__DEV__"      : false,
+        "__TEST__"     : false,
+        "__PROD__"     : false,
+        "__QA__"       : false,
+        "__STAGING__"  : false,
+        "__COVERAGE__" : false,
+        "CONF": false,
+        "ga": false,
+        "gtag": false
+    },
+    "rules": {
+        "indent": [
+            "error",
+            2
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": 0,
+        "react/prop-types": 0
+    }
+}
