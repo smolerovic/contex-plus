@@ -1,9 +1,13 @@
 import { combineReducers } from 'redux';
+import { reducer as form } from 'redux-form';
 
-import homeReducer from './home';
+import errorReducer from './error_message_reducer';
+import successReducer from './success_message_reducer';
 
 const rootReducer = combineReducers({
-  homeReducer: homeReducer
+  form: form,
+  successReducer: successReducer,
+  errorReducer: errorReducer
 });
 
 export default rootReducer;

@@ -27,11 +27,10 @@
     color: #bbbbbb;
 }
 .a-color-hover{
-    font-size: 14px;
     color: #ff7713;
-}
-.a-color-hover:hover{
-    color: #ff7713;
+    &:hover{
+        color: #ff7713;
+    }
 }
 .active{
     color: #ff7713;

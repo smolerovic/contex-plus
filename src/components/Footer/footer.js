@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import './footer.scss';
+import { Link } from 'react-router-dom';
 import LinkedIn from '../../images/linkedin-min.png';
 import Stefan from '../../images/krug-min.png';
 import FacebookFooter from '../../images/facebook-png-min.png';
+import { KONTACT_RUTA, O_NAMA_RUTA, GALERIJA_RUTA, KURSEVI_RUTA } from '../../helper/routes';
 
 class Footer extends Component {
   scrollToTheSection (id) {
@@ -21,33 +23,29 @@ class Footer extends Component {
         <div className='container p-0'>
           <div className='row pt-5 pb-5 m-0'>
             <div className='col-md-4'>
-              <h3>Shortcut links</h3>
+              <h3>Prečice</h3>
               <div className='row'>
                 <div className='col-md-6'>
                   <ul className='pl-3 font-size-15 li-parent-color'>
-                    <li><a href='#nista'>Nesto</a> </li>
-                    <li><a href='#nista'>Proba</a> </li>
-                    <li><a href='#nista'>Example</a> </li>
+                    <li><Link to={O_NAMA_RUTA}>O nama</Link> </li>
+                    <li><Link to={KURSEVI_RUTA}>Kursevi</Link> </li>
                   </ul>
                 </div>
                 <div className='col-md-6'>
                   <ul className='pl-3 font-size-15 li-parent-color'>
-                    <li><a href='#nista'>Nesto</a> </li>
-                    <li><a href='#nista'>Testa</a> </li>
-                    <li><a href='#nista'>Probas</a> </li>
+                    <li><Link to={GALERIJA_RUTA}>Galerija</Link> </li>
+                    <li><Link to={KONTACT_RUTA}>Kontakt</Link> </li>
                   </ul>
                 </div>
               </div>
             </div>
             <div className='col-md-4'>
-              <h3>About us</h3>
-              <div className='font-size-15'>Cras varius mauris imperdiet efficitur pulvinar? Morbi pretium sed tortor et blandit. Ut risus ligula.</div>
-              <div className='font-size-15'>Dictum et lectus id, pharetra porta odio? Vivamus aliquet consectetur lorem. Donec fringilla nisi ac eros molestie auctor. Phasellus hendrerit ante rhoncus, cursus odio in; blandit urna.</div>
+              <h3>O nama</h3>
+              <div className='font-size-15'>Škola jezika Kontext plus nastala je kao deo Centra za strane jezike Kontext koji je počeo sa radom septembra 1991. godine sa željom da kreira okruženje koje će omogućiti bavljenje jezikom, bilo da se radi o učenju, podučavanju, prevođenju ili umetničkom izražavanju, i da postane deo svakodnevne kulture i zadovolji komunikative i delatne potrebe svojih polaznika i saradnika.</div>
             </div>
             <div className='col-md-4'>
-              <h3>Our mission</h3>
-              <div className='font-size-15'>Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis.</div>
-              <div className='font-size-15 m-0'>Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imper diet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu luctus et ac, laoreet enim.</div>
+              <h3>Naša misija</h3>
+              <div className='font-size-15'>Ako tražite efikasne programe kurseva stranih jezika i posvećene i stručne predavače - na pravom ste mestu. Naša škola je spoj iskustva, znanja i velikog entuzijazma da ih prenesemo na druge. Dostupni smo Vam u skoro svako doba za sve infomacija koje su Vam potrebne.</div>
             </div>
           </div>
         </div>

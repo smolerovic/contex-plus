@@ -55,6 +55,7 @@ h3, h2{
   background-color: rgba(255,119,19, 0.2);
   box-shadow: none;
   font-weight: 500;
+  border-color: #e8a77e;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -109,9 +110,6 @@ h1, h2, h3, h4, .font-family-fensy{
 }
 h1{
   font-weight: bold;
-}
-p{
-  color: white;
 }
 .fa-facebook-f:hover{
   color: #777777;

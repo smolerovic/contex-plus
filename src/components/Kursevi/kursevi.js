@@ -8,7 +8,14 @@ class Kursevi extends Component {
     return (
       <div className='container'>
         <div className='row'>
-          Kursevi
+        Upis je u toku!
+        - kursevi nemačkog
+        - kursevi engleskog
+        - konverzacijski kursevi
+        - pripremni časovi za osnovnui i srednju školu
+        - rad u malim grupama
+        - intezivni kursevi svih nivoa
+        - obuka za međunarodne ispite
         </div>
       </div>
     );

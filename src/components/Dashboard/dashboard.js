@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './dashboard.scss';
+import { Link } from 'react-router-dom';
 import SectionTwoImage from '../../images/home_school_photo.jpg';
 import SectionThree from '../../images/home_school_picoftheweek.png';
 import Imageone from '../../images/teaching.png';
 import Imagetwo from '../../images/creativity.png';
 import Imagethree from '../../images/reaction.png';
+import { O_NAMA_RUTA } from '../../helper/routes';
 
 class Dashboard extends Component {
   componentDidMount () {
@@ -20,20 +22,23 @@ class Dashboard extends Component {
                 <div className='col-md-4 mb-3'>
                   <div className='first-section'>
                     <h2>What distinguishes us?</h2>
-                    <p className='m-0'>Our mission is to ensure that every child is equipped mentally, emotionally, socially and spiritually for life. We provide a quality pre-school education and has been operating for the past 25 years.</p>
+                    <p className='m-0'>Naša misija je da obezbedimo da svako dete bude mentalno, emocionalno, društveno i duhovno opremljeno za život.</p>
                     <ul className='mt-3'>
-                      <li className='li-check'>Neki text jedan</li>
-                      <li className='li-check'>Neki text dva</li>
-                      <li className='li-check'>Neki text tri</li>
+                      <li className='li-check'>Savremene metode podučavanja kao i moderni i živopisni materijali</li>
+                      <li className='li-check'>Kvalitet i profesionalnost</li>
+                      <li className='li-check'>Pristupacne cene i mnoge druge pogodnosti pri placanju</li>
                     </ul>
-                    <button className='btn position-relative'>VISE</button>
+                    <Link to={O_NAMA_RUTA} className='btn position-relative'>VISE</Link>
                   </div>
                 </div>
                 <div className='col-md-4 mb-3'>
                   <div className='second-section'>
-                    <h2>Our beliefs</h2>
+                    <h2>Nastava</h2>
                     <img width='100%' src={SectionTwoImage} alt='section-tow' />
-                    <p className='m-0 mt-3'>We believe that salvation is only possible in this life when a person is able to make a volitional and intelligent decision to receive Christ as Saviour. We believe that there is no second chance after death.</p>
+                    <p className='m-0 mt-3'>Pored razvoja svih jezičkih sposobnosti, kursevi ovog tipa su korisni za mlađe
+                    uzraste i u razvoju drugih kognitivnih sposobnosti. Sva nastava je interaktivna, što
+                    znači da podstiče ne samo na usvajanje novih znanja lako i zanimljivo, već i
+                    rešavanje zadataka u grupi i razvijanje socijalne inteligencije kod dece.</p>
                     <button className='btn mt-3 position-relative'>VISE</button>
                   </div>
                 </div>
