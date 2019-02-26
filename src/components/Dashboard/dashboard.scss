@@ -1,19 +1,19 @@
 @import '../../styles/variables';
 
-.first-section{
-    background: url('../../images/section_one.png') no-repeat bottom center;
+@mixin threeBox ($image){
+    background: url('../../images/section_#{$image}.png') no-repeat bottom center;
     background-size: cover;
     padding: 30px 30px 50px;
+    color: $white;
+}
+.first-section{
+    @include threeBox ('one');
 }
 .second-section{
-    background: url('../../images/section_two.png') no-repeat bottom center;
-    background-size: cover;
-    padding: 30px 30px 50px;
+    @include threeBox ('two');
 }
 .thirt-section{
-    background: url('../../images/section_three.png') no-repeat bottom center;
-    background-size: cover;
-    padding: 30px 30px 50px;
+    @include threeBox ('three');
 }
 .li-check:before {
     content: "\f00c";
@@ -21,7 +21,7 @@
     display: inline-block;
     margin-left: -1.3em;
     width: 1.3em;
-    color: black;
+    color: $yellow-kontex;
   }
 .li-check{
       list-style: none;

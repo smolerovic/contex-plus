@@ -6,12 +6,12 @@
 }
 .link-hover:hover{
     text-decoration: none;
-    color: #ff7713;
+    color: $yellow-kontex;
     .nav-hover{
         display: block;
         height: 4px;
         position: absolute;
-        background-color: #ff7713;
+        background-color: $yellow-kontex;
         width: 100%;
         top: -4px;
         right: 0px;
@@ -27,18 +27,18 @@
     color: #bbbbbb;
 }
 .a-color-hover{
-    color: #ff7713;
+    color: $yellow-kontex;
     &:hover{
-        color: #ff7713;
+        color: $yellow-kontex;
     }
 }
 .active{
-    color: #ff7713;
+    color: $yellow-kontex;
     .nav-hover{
         display: block;
         height: 4px;
         position: absolute;
-        background-color: #ff7713;
+        background-color: $yellow-kontex;
         width: 100%;
         top: -4px;
         right: 0px;
@@ -70,7 +70,7 @@
     position: absolute;
     height: 3px;
     width: 24px;
-    background: #ff7713;
+    background: $yellow-kontex;
     border-radius: 9px;
     opacity: 1;
     left: 7px
@@ -126,7 +126,7 @@
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
     }
     .white-hover:hover{
-        color: white;
+        color: $white;
     }
 }
 @media only screen and  ( max-width: 991px ) {
@@ -144,7 +144,7 @@
         display: none;
     }
     .background-white-responsive{
-        background: white;
+        background: $white;
         padding: 0.5rem 0rem 1rem 0.5rem;
     }
     .nav-changed-position{

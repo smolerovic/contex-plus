@@ -23,7 +23,7 @@ $primaryLightColor: #202020;
 $primaryDarkColor: #272727;
 
 body {
-  background: white center no-repeat;
+  background: $white center no-repeat;
   font-family: $font-family-sans-serif;
 }
 
@@ -33,7 +33,7 @@ hr{
 }
 
 h3, h2{
-  color: white;
+  color: $white;
 }
 
 .pointer{
@@ -49,13 +49,14 @@ h3, h2{
   border-color: transparent;
   font-weight: 500;
   border-radius: 0px;
-  color: black;
-}
-.form-control:focus{
-  background-color: rgba(255,119,19, 0.2);
-  box-shadow: none;
-  font-weight: 500;
-  border-color: #e8a77e;
+  color: $black;
+  border-color: #e2d0c4;
+  height: 40px;
+  &:focus{
+    border-color: #e2d0c4;
+    box-shadow: none;
+    font-weight: 500;
+  }
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -79,10 +80,13 @@ textarea{
 }
 
 .btn{
-  background-color: #FF7713;
-  color: white;
+  background-color: $yellow-kontex;
+  color: $white;
   border-radius: 0px;
   transition: color 0.3s ease;
+  &:focus{
+    box-shadow: none;
+  }
 }
 
 .btn::after {
@@ -120,11 +124,27 @@ h1{
 button:focus{
   outline: none;
 }
-@media only screen and  ( max-width: 575px ) {
-  .pl-xs-0{
-    padding-left: 0px;
-  }
-  .pr-xs-0{
-    padding-right: 0px;
+.form-control-feedback{
+  color: #EF5050;
+  margin-top: 0.25rem;
+}
+.has-danger{
+  .form-control-danger, .form-control:focus{
+      border: 1px solid #EF5050;
   }
 }
+@media only screen and  ( max-width: 991px ) and ( min-width: 768px ) { 
+  .container-dash-custom{
+    max-width: 960px !important;
+  }
+}
+
+@media only screen and  ( max-width: 575px ) {
+  .pl-xs-0{
+    padding-left: 0px !important;
+  }
+  .pr-xs-0{
+    padding-right: 0px !important;
+  }
+}
+

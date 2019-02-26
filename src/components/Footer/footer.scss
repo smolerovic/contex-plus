@@ -1,11 +1,11 @@
 @import '../../styles/variables';
 
 .topcina{
-    color: #ff7713;
+    color: $yellow-kontex;
     font-size: 20px;
 }
 .a-footer{
-    color: #ff7713;
+    color: $yellow-kontex;
     margin-left: 5px;
     cursor: pointer;
 }
@@ -103,9 +103,9 @@
   }
   .li-parent-color{
       a{
-          color: #ff7713;
+          color: $yellow-kontex;
       }
       a:hover{
-        color: #ff7713;
+        color: $yellow-kontex;
     }
   }

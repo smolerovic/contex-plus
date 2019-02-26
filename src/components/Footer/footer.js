@@ -41,7 +41,7 @@ class Footer extends Component {
             </div>
             <div className='col-md-4'>
               <h3>O nama</h3>
-              <div className='font-size-15'>Škola jezika Kontext plus nastala je kao deo Centra za strane jezike Kontext koji je počeo sa radom septembra 1991. godine sa željom da kreira okruženje koje će omogućiti bavljenje jezikom, bilo da se radi o učenju, podučavanju, prevođenju ili umetničkom izražavanju, i da postane deo svakodnevne kulture i zadovolji komunikative i delatne potrebe svojih polaznika i saradnika.</div>
+              <div className='font-size-15 mb-3'>Škola jezika Kontext plus nastala je kao deo Centra za strane jezike Kontext koji je počeo sa radom septembra 1991. godine sa željom da kreira okruženje koje će omogućiti bavljenje jezikom, bilo da se radi o učenju, podučavanju, prevođenju ili umetničkom izražavanju, i da postane deo svakodnevne kulture i zadovolji komunikative i delatne potrebe svojih polaznika i saradnika.</div>
             </div>
             <div className='col-md-4'>
               <h3>Naša misija</h3>
@@ -72,7 +72,7 @@ class Footer extends Component {
                 </span>
               </div>
             </div>
-            <div className='col-md-3 text-right'>
+            <div className='col-md-3 text-right pr-4'>
               <a href='https://www.facebook.com/kontextplusgrocka/' target='_blank' rel='noopener noreferrer' className='mr-3' >
                 <i className='fa fa-facebook-f' title='Facebook' />
               </a>

@@ -15,13 +15,13 @@ class Dashboard extends Component {
   render () {
     return (
       <main className='container-fluid p-0'>
-        <div className='container'>
+        <div className='container container-dash-custom'>
           <div className='row m-0'>
             <div className='col-md-12 p-0 mt-5 mb-5'>
               <div className='row'>
                 <div className='col-md-4 mb-3'>
                   <div className='first-section'>
-                    <h2>What distinguishes us?</h2>
+                    <h2>Sta nas razlikuje?</h2>
                     <p className='m-0'>Naša misija je da obezbedimo da svako dete bude mentalno, emocionalno, društveno i duhovno opremljeno za život.</p>
                     <ul className='mt-3'>
                       <li className='li-check'>Savremene metode podučavanja kao i moderni i živopisni materijali</li>
@@ -51,16 +51,16 @@ class Dashboard extends Component {
               </div>
             </div>
           </div>
-          <div className='row mt-4 mb-5' style={{ color: 'black' }}>
-            <div className='col-12 text-center mb-5 font-family-fensy' style={{ fontSize: '33px', fontWeight: 'bold' }}>
-              Our school is the <b className='pl-2 pr-2' style={{ background: '#ff7713', color: 'white' }}>best choice</b> for your kid
+          <div className='row mt-4 mb-5 pr-3' style={{ color: 'black' }}>
+            <div className='col-12 pr-xs-0 text-center mb-5 font-family-fensy' style={{ fontSize: '33px', fontWeight: 'bold' }}>
+              Nasa skole je <b className='pl-2 pr-2 pr-xs-0 pl-xs-0' style={{ background: '#ff7713', color: 'white' }}>najbolji izbor</b> za Vas
             </div>
             <div className='col-md-4 border-right-custom'>
-              <div className='row'>
-                <div className='col-4 pl-0'>
-                  <img src={Imageone} alt='image1' style={{ width: '100%' }} />
+              <div className='row mb-3'>
+                <div className='col-5 text-center'>
+                  <img src={Imageone} alt='image1' style={{ width: '75%' }} />
                 </div>
-                <div className='col'>
+                <div className='col pl-0'>
                   <h4 style={{ fontWeight: 'bold' }}>Teaching</h4>
                   <div className='font-size-15'>
                     Vitae adipiscing turpis. Aenean ligula nibh in, molestie id viverra a, dapibus at dolor.

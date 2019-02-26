@@ -9,7 +9,7 @@ class ErrorPage extends Component {
         <div className='row align-items-center text-center h-50'>
           <div className='w-100'>
             <h1 style={{ fontSize: '50px' }}>Ooops! <br />Stranica nije pronadjena</h1>
-            <a href='/' className='btn position-relative mt-3'>POVRATAK NA POČETNU</a>
+            <a href='/' className='btn position-relative mt-3' style={{ background: 'black' }}>POVRATAK NA POČETNU</a>
           </div>
         </div>
         <img src={Err} alt='error-slika' className='error-slika-style' />
