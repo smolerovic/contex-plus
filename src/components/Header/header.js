@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import './header.scss';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
-import Logo from '../../images/kontex_logo.png';
+
+import { ROOT_ROUTE, KONTACT_RUTA, O_NAMA_RUTA, GALERIJA_RUTA, KURSEVI_RUTA } from '../../helper/routes';
 // import { pageView } from '../../helper/googleAnalytics';
 import { CURRENT_URL } from '../../actions/types';
 
-import { ROOT_ROUTE, KONTACT_RUTA, O_NAMA_RUTA, GALERIJA_RUTA, KURSEVI_RUTA } from '../../helper/routes';
-// import DashboardImage from '../../images/home_school.jpg';
+import Logo from '../../images/kontex_logo-min.png';
+
 class Header extends Component {
   constructor (props) {
     super(props);

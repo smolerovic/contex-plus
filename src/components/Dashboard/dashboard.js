@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './dashboard.scss';
 import { Link } from 'react-router-dom';
-import SectionTwoImage from '../../images/home_school_photo.jpg';
-import SectionThree from '../../images/home_school_picoftheweek.png';
-import Imageone from '../../images/teaching.png';
-import Imagetwo from '../../images/creativity.png';
-import Imagethree from '../../images/reaction.png';
 import { O_NAMA_RUTA } from '../../helper/routes';
 
+import SectionTwoImage from '../../images/home_school_photo-min.jpg';
+import SectionThree from '../../images/home_school_picoftheweek-min.png';
+import Imageone from '../../images/teaching-min.png';
+import Imagetwo from '../../images/creativity-min.png';
+import Imagethree from '../../images/reaction-min.png';
 class Dashboard extends Component {
   componentDidMount () {
     window.scrollTo(0, 0);

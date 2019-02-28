@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import Crtica from '../../images/slash.png';
-import Breaker from '../../images/breaker.png';
 import CountTo from 'react-count-to';
 import './o_nama.scss';
+
+import Crtica from '../../images/slash-min.png';
+import Breaker from '../../images/breaker-min.png';
+
 class Onama extends Component {
   componentDidMount () {
     window.scrollTo(0, 0);

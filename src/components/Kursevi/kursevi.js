@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Kurs1 from '../../images/kurs1.jpg';
-import Kurs2 from '../../images/kurs2.jpg';
-import Kurs3 from '../../images/kurs3.jpg';
+
+import Kurs1 from '../../images/kurs1-min.jpg';
+import Kurs2 from '../../images/kurs2-min.jpg';
+import Kurs3 from '../../images/kurs3-min.jpg';
 
 const podaci = [
   { index: 1, src: Kurs1, h1: 'Kursevi engleskog', text: 'Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna.' },

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 import './footer.scss';
 import { Link } from 'react-router-dom';
+import $ from 'jquery';
+import { KONTACT_RUTA, O_NAMA_RUTA, GALERIJA_RUTA, KURSEVI_RUTA } from '../../helper/routes';
+
 import LinkedIn from '../../images/linkedin-min.png';
 import Stefan from '../../images/krug-min.png';
 import FacebookFooter from '../../images/facebook-png-min.png';
-import { KONTACT_RUTA, O_NAMA_RUTA, GALERIJA_RUTA, KURSEVI_RUTA } from '../../helper/routes';
 
 class Footer extends Component {
   scrollToTheSection (id) {

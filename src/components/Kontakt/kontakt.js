@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Field, reduxForm, reset } from 'redux-form';
+import './kontakt.scss';
+
 import * as validations from '../../helper/validation';
 import * as actions from '../../actions/sendEmail';
-
 import Loader from '../Loader/loader';
-// import GoogleMap from '../../images/google-map.png';
-import './kontakt.scss';
 
 const renderField = ({ input, id, label, type, meta: { touched, error, warning } }) => (
   <fieldset className={'mb-2 position-relative p-0 ' + (touched && error ? 'has-danger ' : (touched && warning ? 'has-warning ' : (touched ? '' : '')))}>

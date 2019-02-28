@@ -9,6 +9,12 @@
     left: 0;
     right: 0;
 }
+.error-btn{
+    background: #607D8B;
+    &:hover{
+        color: $white;
+    }
+}
 @media only screen and  ( max-width: 767px ) {
     .error-slika-style{
         width: 60%;
