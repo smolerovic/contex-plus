@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CountTo from 'react-count-to';
 import './o_nama.scss';
+import $ from 'jquery';
 
 import Crtica from '../../images/slash-min.png';
 import Breaker from '../../images/breaker-min.png';
@@ -10,8 +11,23 @@ class Onama extends Component {
     window.scrollTo(0, 0);
   }
   render () {
+    function isInView(el) {
+      var rect = el.getBoundingClientRect();
+      return !(rect.top > $(window).height() || rect.bottom < 0);
+    }
+    
+    $(document).on("scroll", function() {
+      $( "video" ).each(function() {
+        if (isInView($(this)[0])) {
+          if ($(this)[0].paused) $(this)[0].play();
+        }
+        else {
+          if (!$(this)[0].paused) $(this)[0].pause();
+        }
+      });
+    });   
     return (
-      <div className='container mt-5 mb-5'>
+      <div className='container mt-5 mb-4'>
         <div className='row'>
           <div className='col-12'>
             <div className='row text-center'>
@@ -93,6 +109,9 @@ class Onama extends Component {
               i <a className='a-color-hover' href='tel:063480277'>063/48-02-77</a>.
             </h5>
           </div>
+          <video class="mt-5 pl-3 pr-3 pl-xs-0 pr-xs-0" loop="" width="100%" height="100%">
+            <source src="https://dl.dropboxusercontent.com/s/9u5hbu1ny00ot5t/KIZOA-Movie-Maker-9i9ptzgm.mp4?dl=0"></source>
+          </video>
         </div>
       </div>
     );
