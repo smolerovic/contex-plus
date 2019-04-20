@@ -11,21 +11,20 @@ class Onama extends Component {
     window.scrollTo(0, 0);
   }
   render () {
-    function isInView(el) {
+    function isInView (el) {
       var rect = el.getBoundingClientRect();
       return !(rect.top > $(window).height() || rect.bottom < 0);
     }
-    
-    $(document).on("scroll", function() {
-      $( "video" ).each(function() {
+
+    $(document).on('scroll', function () {
+      $('video').each(function () {
         if (isInView($(this)[0])) {
           if ($(this)[0].paused) $(this)[0].play();
-        }
-        else {
+        } else {
           if (!$(this)[0].paused) $(this)[0].pause();
         }
       });
-    });   
+    });
     return (
       <div className='container mt-5 mb-4'>
         <div className='row'>
@@ -105,12 +104,12 @@ class Onama extends Component {
           <div className='col-md-12 mt-5'>
             <h5 className='o-nama-h5'>
               Radi još bolje pristupačnosti svima zainteresovanima, sada se nalazimo na novoj lokaciji - Vučka Milićevića 7a, u zgradi odmah pored marketa Idea.
-              Sve informacije od željenom kursu možete dobiti na brojevima telefona: <a className='a-color-hover' href='tel:0654793883'>065/47-93-883</a>,
-              i <a className='a-color-hover' href='tel:063480277'>063/48-02-77</a>.
+              Sve informacije od željenom kursu možete dobiti na brojevima telefona: <a className='a-color-hover' href='tel:+381654793883'>065/47-93-883</a>,
+              i <a className='a-color-hover' href='tel:+38163480277'>063/48-02-77</a>.
             </h5>
           </div>
-          <video class="mt-5 pl-3 pr-3 pl-xs-0 pr-xs-0" loop="" width="100%" height="100%">
-            <source src="https://dl.dropboxusercontent.com/s/9u5hbu1ny00ot5t/KIZOA-Movie-Maker-9i9ptzgm.mp4?dl=0"></source>
+          <video className='mt-5 pl-3 pr-3 pl-xs-0 pr-xs-0' loop='' width='100%' height='100%'>
+            <source src='https://dl.dropboxusercontent.com/s/9u5hbu1ny00ot5t/KIZOA-Movie-Maker-9i9ptzgm.mp4?dl=0' />
           </video>
         </div>
       </div>

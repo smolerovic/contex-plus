@@ -78,7 +78,7 @@ class Header extends Component {
           <div className='row background-white-responsive'>
             <div className='col-md-10'>
               <span className='mr-3 imate-pitanja'>Imate bilo kakva pitanja?</span>
-              <i className='fa fa-phone mr-2' /><a className='a-color-hover mr-2' href='tel:0654793883'>065/47-93-883</a>
+              <i className='fa fa-phone mr-2' /><a className='a-color-hover mr-2' href='tel:+381654793883'>065/47-93-883</a>
               <i className='fa fa-envelope mr-2' /><a className='a-color-hover' href='mailto:kontext.grocka@gmail.com'>kontext.grocka@gmail.com</a>
             </div>
             <div className='col-md-2 text-right'>

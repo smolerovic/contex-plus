@@ -80,11 +80,11 @@ class Kontakt extends Component {
                 <div className='col-12 mt-2'>
                   <div className='d-flex align-items-center mb-1'>
                     <i className='fa-kontakt fa fa-phone mr-2' />
-                    <a className='a-color-hover mr-2' style={{ fontSize: '16px' }} href='tel:0654793883'>065/47-93-883</a>
+                    <a className='a-color-hover mr-2' style={{ fontSize: '16px' }} href='tel:+381654793883'>065/47-93-883</a>
                   </div>
                   <div className='d-flex align-items-center mb-1'>
                     <i className='fa-kontakt fa fa-phone mr-2' />
-                    <a className='a-color-hover' href='tel:063480277'>063/48-02-77</a>
+                    <a className='a-color-hover' href='tel:+38163480277'>063/48-02-77</a>
                   </div>
                   <div className='d-flex align-items-center'>
                     <i className='fa-kontakt fa fa-envelope mr-2' />
