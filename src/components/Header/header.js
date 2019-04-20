@@ -129,7 +129,9 @@ class Header extends Component {
         </div>
         <div className='container h-100'>
           <div className='row text-center h-100' style={{ alignItems: 'flex-end' }}>
-            <div className='col-12 pb-5'>{this.pageSubTitles()}</div>
+            <div className='col-12 pb-5'>
+              {this.pageSubTitles()}
+            </div>
           </div>
         </div>
       </div>
