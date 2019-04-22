@@ -23,7 +23,7 @@ class HelmetHeader extends Component {
   }
   render () {
     const titlovi = this.pageSubTitles();
-    let title = titlovi !== '' ? `Kontext Plus - ${titlovi}` : 'Kontext Plus';
+    let title = titlovi !== '' ? `Kontext Plus - ${titlovi}` : 'Kontext Plus - Škola stranih jezika';
     return (
       <Helmet>
         <title>{ title }</title>

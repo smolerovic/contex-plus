@@ -55,7 +55,7 @@ class Galerija extends Component {
           {images.map((newLocal, index) => {
             return (
               <div className='col-md-4 pb-3' key={index}>
-                <img className='pointer w-100' src={newLocal} onClick={() => this.setState({ isOpen: true, photoIndex: index })} alt='slike-galerija' />
+                <img className='pointer w-100' src={newLocal} onClick={() => this.setState({ isOpen: true, photoIndex: index })} alt={'Slika ' + index} />
               </div>
             );
           })}

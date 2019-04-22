@@ -11,6 +11,9 @@
 }
 .error-btn{
     background: #607D8B;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 15px;
     &:hover{
         color: $white;
     }

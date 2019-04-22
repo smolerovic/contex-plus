@@ -14,7 +14,7 @@ class ErrorPage extends Component {
             <a href={ROOT_ROUTE} className='btn position-relative mt-3 error-btn'>POVRATAK NA POČETNU</a>
           </div>
         </div>
-        <img src={Err} alt='error-slika' className='error-slika-style' />
+        <img src={Err} alt='Error slika' className='error-slika-style' />
         <style>{'footer{display: none!important;} #top{display: none;}'}</style>
       </div>
     );

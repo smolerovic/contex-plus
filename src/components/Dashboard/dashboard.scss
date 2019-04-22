@@ -8,6 +8,9 @@
 }
 .first-section{
     @include threeBox ('one');
+    a:hover {
+        color: $white;
+    }
 }
 .second-section{
     @include threeBox ('two');

@@ -6,9 +6,29 @@ import $ from 'jquery';
 import Crtica from '../../images/slash-min.png';
 import Breaker from '../../images/breaker-min.png';
 
+const podaciONama = [
+  { index: 1, p: 'Uspešno se bavimo podučavanjem stranih jezika i propremom za polaganje internacionalnih ispita.' },
+  { index: 2, p: 'Od septembra ove godine, naša škola je predvođena mladim timom entuzijasta i zaljubljenika u jezike.' },
+  { index: 3, p: 'Kursevi su prilagođeni različitim uzrastima, a metode u nastavi u skladu sa savremenim načinom podučavanja. Naši polaznici dolaze na časove sa osmesima na licu, jer se raduju svakom novom okupljanju sa ostatkom grupe kao i predavačima.' },
+  { index: 4, p: 'Garantujemo Vam dobre rezultate i uživamo u obostranom zadovoljstvu kada Vam poznavanje jezika otvori neka nova vrata.' },
+  { index: 5, p: 'Učenje se obavlja u grupama malog broja polaznika, što ostavlja prostora za svakoga da se individualno izrazi i usavrši.' },
+  { index: 6, p: ' Nakon svakog uspešno završenog kursa, polaznici dobijaju sertifikat priznat bilo gde u zemlji.' }
+
+];
+
 class Onama extends Component {
   componentDidMount () {
     window.scrollTo(0, 0);
+  }
+  oNama = (pod) => {
+    return (
+      <div className='col-md-6 d-flex' key={pod.index}>
+        <div style={{ paddingTop: '6px', marginRight: '1rem' }}>
+          <img src={Crtica} alt='Crtica' />
+        </div>
+        <p className='o-nama-p'>{pod.p}</p>
+      </div>
+    );
   }
   render () {
     function isInView (el) {
@@ -32,27 +52,27 @@ class Onama extends Component {
             <div className='row text-center'>
               <div className='col-md-3'>
                 <CountTo className='count-style' to={10} speed={1234} />
-                <div className='font-family-fensy ff-size'>Projekti</div>
+                <div className='font-family-fensy ff-size'>Projekata</div>
                 <div className='crca' />
-                <p>Some text</p>
+                { /*  <p>Some text</p> */ }
               </div>
               <div className='col-md-3'>
                 <CountTo className='count-style' to={300} speed={1200} />
-                <div className='font-family-fensy ff-size'>Polaznici</div>
+                <div className='font-family-fensy ff-size'>Polaznika</div>
                 <div className='crca' />
-                <p>Some text</p>
+                { /* <p>Some text</p> */ }
               </div>
               <div className='col-md-3'>
                 <CountTo className='count-style' to={50} speed={1300} />
-                <div className='font-family-fensy ff-size'>Kursevi</div>
+                <div className='font-family-fensy ff-size'>Kurseva</div>
                 <div className='crca' />
-                <p>Some text</p>
+                { /*   <p>Some text</p> */ }
               </div>
               <div className='col-md-3'>
                 <CountTo className='count-style' to={150} speed={2000} />
                 <div className='font-family-fensy ff-size'>Ucenika</div>
                 <div className='crca' />
-                <p>Some text</p>
+                { /*  <p>Some text</p> */ }
               </div>
             </div>
           </div>
@@ -60,46 +80,11 @@ class Onama extends Component {
             <h5 className='o-nama-h5'>Škola jezika Kontext plus nastala je kao deo Centra za strane jezike Kontext koji je počeo sa radom septembra 1991. godine sa željom da kreira okruženje koje će omogućiti bavljenje jezikom, bilo da se radi o učenju, podučavanju, prevođenju ili umetničkom izražavanju, i da postane deo svakodnevne kulture i zadovolji komunikative i delatne potrebe svojih polaznika i saradnika.</h5>
           </div>
           <div className='col-12 mb-4 text-center three-dots'>. . .</div>
-          <div className='col-md-6 d-flex'>
-            <div style={{ paddingTop: '6px', marginRight: '1rem' }}>
-              <img src={Crtica} alt='crtica' />
-            </div>
-            <p className='o-nama-p'>Uspešno se bavimo podučavanjem stranih jezika i propremom za polaganje internacionalnih ispita.</p>
-          </div>
-          <div className='col-md-6 d-flex'>
-            <div style={{ paddingTop: '6px', marginRight: '1rem' }}>
-              <img src={Crtica} alt='crtica' />
-            </div>
-            <p className='o-nama-p'>Od septembra ove godine, naša škola je predvođena mladim timom entuzijasta i zaljubljenika u jezike.</p>
-          </div>
-          <div className='col-md-6 d-flex'>
-            <div style={{ paddingTop: '6px', marginRight: '1rem' }}>
-              <img src={Crtica} alt='crtica' />
-            </div>
-            <p className='o-nama-p'>Kursevi su prilagođeni različitim uzrastima, a metode u nastavi u skladu sa savremenim načinom podučavanja. Naši polaznici dolaze na časove sa osmesima na licu, jer se raduju svakom novom okupljanju sa ostatkom grupe kao i predavačima.</p>
-          </div>
-          <div className='col-md-6 d-flex'>
-            <div style={{ paddingTop: '6px', marginRight: '1rem' }}>
-              <img src={Crtica} alt='crtica' />
-            </div>
-            <p className='o-nama-p'>Garantujemo Vam dobre rezultate i uživamo u obostranom zadovoljstvu kada Vam poznavanje jezika otvori neka nova vrata.</p>
-          </div>
-          <div className='col-md-6 d-flex'>
-            <div style={{ paddingTop: '6px', marginRight: '1rem' }}>
-              <img src={Crtica} alt='crtica' />
-            </div>
-            <p className='o-nama-p'>Učenje se obavlja u grupama malog broja polaznika, što ostavlja prostora za svakoga da se individualno izrazi i usavrši.</p>
-          </div>
-          <div className='col-md-6 d-flex'>
-            <div style={{ paddingTop: '6px', marginRight: '1rem' }}>
-              <img src={Crtica} alt='crtica' />
-            </div>
-            <p className='o-nama-p'>
-              Nakon svakog uspešno završenog kursa, polaznici dobijaju sertifikat priznat bilo gde u zemlji.
-            </p>
-          </div>
+          {podaciONama.map((pod) => {
+            return this.oNama(pod);
+          })}
           <div className='col-12 text-center'>
-            <img src={Breaker} alt='breaker' style={{ height: '20px' }} />
+            <img src={Breaker} alt='Linija razdvajanja' style={{ height: '20px' }} />
           </div>
           <div className='col-md-12 mt-5'>
             <h5 className='o-nama-h5'>

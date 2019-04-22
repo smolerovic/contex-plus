@@ -1,0 +1,16 @@
+.p-style-kursevi {
+    color: grey;
+    line-height: 26px;
+}
+@media ( max-width: 991px ) { 
+    .p-style-kursevi {
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+@media ( max-width: 767px ) { 
+    .sl-side {
+        padding-left: 0px;
+    }
+}

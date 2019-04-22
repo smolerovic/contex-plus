@@ -53,20 +53,20 @@ class Footer extends Component {
         <hr />
         <div className='container p-0 pt-0 pb-4 position-relative pt-md-3'>
           <div className='row m-0'>
-            <div className='col d-none d-md-block pl-0' style={{ fontSize: '14px' }}>
+            <div className='col d-none d-md-block pl-xs-0' style={{ fontSize: '14px' }}>
               <div className='footer-p'>
                 &copy; Kontext Plus. All Rights Reserved. Build by
                 <span className='a-footer position-relative'>Stefan Molerović
                   <div className='radi'>
                     <div className='gornji' />
                     <div className='krug'>
-                      <img src={Stefan} className='stefan-krug' alt='stefan-molerovic-slika' />
+                      <img src={Stefan} className='stefan-krug' alt='Stefan Molerović slika' />
                     </div>
                     <div className='donji'>
                       <p className='stefan-molerovic'>Stefan Molerović</p>
                       <p className='front-end'>Front End Developer</p>
-                      <a href='https://rs.linkedin.com/in/stefan-molerovic' target='_blank' rel='noopener noreferrer'><img className='linked-in' src={LinkedIn} alt='linkedin-stefan' /></a>
-                      <a href='https://www.facebook.com/9stefan2' target='_blank' rel='noopener noreferrer'><img className='facebook-footer' src={FacebookFooter} alt='facebook-stefan' /></a>
+                      <a href='https://rs.linkedin.com/in/stefan-molerovic' target='_blank' rel='noopener noreferrer'><img className='linked-in' src={LinkedIn} alt='LinkedIn' /></a>
+                      <a href='https://www.facebook.com/9stefan2' target='_blank' rel='noopener noreferrer'><img className='facebook-footer' src={FacebookFooter} alt='Facebook' /></a>
                     </div>
                     <div className='nevidljivi' />
                   </div>
@@ -74,7 +74,7 @@ class Footer extends Component {
               </div>
             </div>
             <div className='col-md-3 text-right pr-4'>
-              <a href='https://www.facebook.com/kontextplusgrocka/' target='_blank' rel='noopener noreferrer' className='mr-3' >
+              <a href='https://www.facebook.com/kontextplusgrocka/' target='_blank' rel='noopener noreferrer' className='mr-4' >
                 <i className='fa fa-facebook-f' title='Facebook' />
               </a>
               <a href='https://www.instagram.com/kontext_grocka/' target='_blank' rel='noopener noreferrer' className='mr-5'>
@@ -89,13 +89,13 @@ class Footer extends Component {
                   <div className='radi'>
                     <div className='gornji' />
                     <div className='krug'>
-                      <img src={Stefan} className='stefan-krug' alt='stefan-molerovic-slika' />
+                      <img src={Stefan} className='stefan-krug' alt='Stefan Molerović slika' />
                     </div>
                     <div className='donji'>
                       <p className='stefan-molerovic'>Stefan Molerović</p>
                       <p className='front-end'>Front End Developer</p>
-                      <a href='https://rs.linkedin.com/in/stefan-molerovic' target='_blank' rel='noopener noreferrer'><img className='linked-in' src={LinkedIn} alt='linkedin-stefan' /></a>
-                      <a href='https://www.facebook.com/9stefan2' target='_blank' rel='noopener noreferrer'><img className='facebook-footer' src={FacebookFooter} alt='facebook-stefan' /></a>
+                      <a href='https://rs.linkedin.com/in/stefan-molerovic' target='_blank' rel='noopener noreferrer'><img className='linked-in' src={LinkedIn} alt='LinkedIn' /></a>
+                      <a href='https://www.facebook.com/9stefan2' target='_blank' rel='noopener noreferrer'><img className='facebook-footer' src={FacebookFooter} alt='Facebook' /></a>
                     </div>
                     <div className='nevidljivi' />
                   </div>

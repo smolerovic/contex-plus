@@ -24,8 +24,14 @@
     font-weight: $font-weight-bold;
 }
 .crca{
-    width: 40%;
-    height: 1px;
-    background-color: rgba(0,0,0,.2);
-    margin: 10px auto;
+    display: none;
+}
+@media (max-width: 767px){
+    .crca{
+        display: block;
+        width: 40%;
+        height: 1px;
+        background-color: rgba(0,0,0,.2);
+        margin: 10px auto;
+    }
 }

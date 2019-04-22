@@ -31,6 +31,7 @@
 }
 .a-color-hover{
     color: $yellow-kontex;
+    white-space: nowrap;
     &:hover{
         color: $yellow-kontex;
     }
@@ -136,20 +137,20 @@
 @media ( max-width: 991px ) {
     .max-width-container{
         max-width: 100%;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 7px 0 rgba(0, 0, 0, 0.2);
         z-index: 10;
     }
     .logo-responsive{
         width: 100%;
         text-align: center;
-        padding-bottom: 10px;
+        padding: 10px 0px;
     }
     .imate-pitanja{
         display: none;
     }
     .background-white-responsive{
         background: $white;
-        padding: 0.5rem 0rem 1rem 0.5rem;
+        padding: 0.5rem;
     }
     .nav-changed-position{
         margin-left: -15px;
@@ -170,13 +171,31 @@
 }
 @media ( max-width: 767px ) {
     .background-white-responsive{
-        padding: 0.5rem 0rem 0rem 0.5rem;
         div{
             text-align: center;
+        }
+        .col-md-2 {
+            a {
+                display: none;
+            }
         }
     }
 }
 
+@media ( max-width: 575px ) {
+    .background-white-responsive{
+        background: #ff7713;
+        div{
+            .a-color-hover {
+                color: white;
+                display: block;
+            }
+            i {
+                display: none;
+            }
+        }
+    }
+}
 @media ( max-width: 374px ) { 
     .logo-responsive {
         text-align: left;
