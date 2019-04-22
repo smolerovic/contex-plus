@@ -24,7 +24,7 @@
     padding-right: 1rem;
 }
 .stefan{
-    background: linear-gradient(90deg, white 50%, #fafaf8 50%);
+    background: linear-gradient(90deg, $white 50%, #fafaf8 50%);
 }
 .fa{
     color: #bbbbbb;
@@ -94,7 +94,7 @@
     height: 40px;
     position: absolute;
     right: 30px;
-    top: 15px;
+    top: 30px;
   }
   .button-header-hamburger:hover{
     opacity: 0.8;

@@ -65,10 +65,10 @@ class Kontakt extends Component {
       this.props.removeSuccessMessage();
     }
     return (
-      <main className='container-fluid'>
+      <main className='container-fluid pl-xs-0 pr-xs-0'>
         <Loader />
         <div className='container p-0'>
-          <div className='row mt-5 mb-5'>
+          <div className='row mt-5 mb-5 m-0'>
             <div className='col-md-6'>
               <h1 className='mb-5'>Kontaktirajte nas</h1>
               <div className='row'>

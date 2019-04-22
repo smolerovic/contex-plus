@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import $ from 'jquery';
 
 import { ROOT_ROUTE, KONTACT_RUTA, O_NAMA_RUTA, GALERIJA_RUTA, KURSEVI_RUTA } from '../../helper/routes';
-// import { pageView } from '../../helper/googleAnalytics';
+import { pageView } from '../../helper/googleAnalytics';
 import { CURRENT_URL } from '../../actions/types';
 
 import Logo from '../../images/kontex_logo-min.png';
@@ -22,7 +22,7 @@ class Header extends Component {
     const prevURL = sessionStorage.getItem(CURRENT_URL);
     if (prevURL !== url) {
       sessionStorage.setItem(CURRENT_URL, url);
-      // pageView(url);
+      pageView(url);
     }
   }
 
