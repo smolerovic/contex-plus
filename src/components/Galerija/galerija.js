@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Lightbox from 'react-image-lightbox';
-import './galerija.scss';
 
 import Slika1 from '../../images/galerija/p1.jpg';
 import Slika2 from '../../images/galerija/p2.jpg';

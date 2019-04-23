@@ -42,7 +42,7 @@ class Kontakt extends Component {
     if (this.state.scrolledToTop) {
       this.setState({ scrolledToTop: false });
     }
-    console.log('!!!!!!!!!', formProps);
+    // console.log('!!!!!!!!!', formProps);
     this.props.dispatch(reset('KontaktForma'));
   }
 
@@ -152,7 +152,7 @@ class Kontakt extends Component {
             </div>
           </div>
         </div>
-        <div className='row'>
+        <div className='row margin-respo'>
           <iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2501.185399721031!2d20.71660254087211!3d44.670425905507194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf0796c21c3969a5d!2sKontext+Plus%2C+%C5%A1kola+stranih+jezika!5e0!3m2!1sen!2srs!4v1551090863968' width='100%' height='450' title='kako do nas' frameBorder='0' allowFullScreen />
         </div>
       </main>

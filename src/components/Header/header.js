@@ -90,41 +90,43 @@ class Header extends Component {
               </a>
             </div>
           </div>
-          <div className='row pr-3 pl-3 nav-changed-position' style={{ background: 'white' }}>
-            <div className='logo-responsive'>
-              <a href='/'>
-                <img src={Logo} alt='Kontext Plus - Škola stranih jezika logo' style={{ width: '230px', height: '100%' }} />
-              </a>
+          <div className='nav-changed-position' style={{ background: 'white' }}>
+            <div className='row pr-3 pl-3 container' style={{ margin: '0px auto' }}>
+              <div className='logo-responsive'>
+                <a href={ROOT_ROUTE}>
+                  <img src={Logo} alt='Kontext Plus - Škola stranih jezika logo' style={{ width: '230px', height: '100%' }} />
+                </a>
+              </div>
+              <nav className='navbar-expand-lg'>
+                <div className='navbar-toggler navbar-toggler-right button-header-hamburger' onClick={() => this.setState({ openHamburger: !openHamburger })}>
+                  <span className='hamburger' />
+                  <span className='hamburger' />
+                  <span className='hamburger' />
+                </div>
+                <div className={`navbar-collapse ${openHamburger ? 'collapse' : ''}`} >
+                  <Link className={`ml-5 pl-3 position-relative link-hover ${pathname === ROOT_ROUTE ? 'active' : ''}`} to={ROOT_ROUTE} onClick={this.hideSidebar}>
+                    <div className='border-desni'>Početna</div>
+                    <div className='nav-hover' />
+                  </Link>
+                  <Link className={`pl-3 position-relative link-hover ${pathname === O_NAMA_RUTA ? 'active' : ''}`} to={O_NAMA_RUTA} onClick={this.hideSidebar}>
+                    <div className='border-desni'>O nama</div>
+                    <div className='nav-hover' />
+                  </Link>
+                  <Link className={`pl-3 position-relative link-hover ${pathname === KURSEVI_RUTA ? 'active' : ''}`} to={KURSEVI_RUTA} onClick={this.hideSidebar}>
+                    <div className='border-desni'>Kursevi</div>
+                    <div className='nav-hover' />
+                  </Link>
+                  <Link className={`pl-3 position-relative link-hover ${pathname === GALERIJA_RUTA ? 'active' : ''}`} to={GALERIJA_RUTA} onClick={this.hideSidebar}>
+                    <div className='border-desni'>Galerija</div>
+                    <div className='nav-hover' />
+                  </Link>
+                  <Link className={`pl-3 position-relative link-hover ${pathname === KONTACT_RUTA ? 'active' : ''}`} to={KONTACT_RUTA} onClick={this.hideSidebar}>
+                    <div className='border-desni'>Kontakt</div>
+                    <div className='nav-hover' />
+                  </Link>
+                </div>
+              </nav>
             </div>
-            <nav className='navbar-expand-lg'>
-              <div className='navbar-toggler navbar-toggler-right button-header-hamburger' onClick={() => this.setState({ openHamburger: !openHamburger })}>
-                <span className='hamburger' />
-                <span className='hamburger' />
-                <span className='hamburger' />
-              </div>
-              <div className={`navbar-collapse ${openHamburger ? 'collapse' : ''}`} >
-                <Link className={`ml-5 pl-3 position-relative link-hover ${pathname === ROOT_ROUTE ? 'active' : ''}`} to={ROOT_ROUTE} onClick={this.hideSidebar}>
-                  <div className='border-desni'>Početna</div>
-                  <div className='nav-hover' />
-                </Link>
-                <Link className={`pl-3 position-relative link-hover ${pathname === O_NAMA_RUTA ? 'active' : ''}`} to={O_NAMA_RUTA} onClick={this.hideSidebar}>
-                  <div className='border-desni'>O nama</div>
-                  <div className='nav-hover' />
-                </Link>
-                <Link className={`pl-3 position-relative link-hover ${pathname === KURSEVI_RUTA ? 'active' : ''}`} to={KURSEVI_RUTA} onClick={this.hideSidebar}>
-                  <div className='border-desni'>Kursevi</div>
-                  <div className='nav-hover' />
-                </Link>
-                <Link className={`pl-3 position-relative link-hover ${pathname === GALERIJA_RUTA ? 'active' : ''}`} to={GALERIJA_RUTA} onClick={this.hideSidebar}>
-                  <div className='border-desni'>Galerija</div>
-                  <div className='nav-hover' />
-                </Link>
-                <Link className={`pl-3 position-relative link-hover ${pathname === KONTACT_RUTA ? 'active' : ''}`} to={KONTACT_RUTA} onClick={this.hideSidebar}>
-                  <div className='border-desni'>Kontakt</div>
-                  <div className='nav-hover' />
-                </Link>
-              </div>
-            </nav>
           </div>
         </div>
         <div className='container h-100'>

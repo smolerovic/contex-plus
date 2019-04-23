@@ -26,9 +26,9 @@ class Dashboard extends Component {
                     <ul className='mt-3'>
                       <li className='li-check'>Savremene metode podučavanja kao i moderni i živopisni materijali</li>
                       <li className='li-check'>Kvalitet i profesionalnost</li>
-                      <li className='li-check'>Pristupacne cene i mnoge druge pogodnosti pri placanju</li>
+                      <li className='li-check'>Pristupačne cene i mnoge druge pogodnosti pri plaćanju</li>
                     </ul>
-                    <Link to={O_NAMA_RUTA} className='btn position-relative'>VISE</Link>
+                    <Link to={O_NAMA_RUTA} className='btn position-relative'>VIŠE</Link>
                   </div>
                 </div>
                 <div className='col-md-4 mb-3'>
@@ -51,7 +51,7 @@ class Dashboard extends Component {
           </div>
           <div className='row mt-4 pr-3' style={{ color: 'black' }}>
             <div className='col-12 pr-xs-0 text-center mb-5 font-family-fensy' style={{ fontSize: '33px', fontWeight: 'bold' }}>
-              Nasa skole je <b className='pl-2 pr-2 pr-xs-0 pl-xs-0' style={{ background: '#ff7713', color: 'white', whiteSpace: 'nowrap' }}>najbolji izbor</b> za Vas
+              Naša škola je <b className='pl-2 pr-2 pr-xs-0 pl-xs-0' style={{ background: '#ff7713', color: 'white', whiteSpace: 'nowrap' }}>najbolji izbor</b> za Vas
             </div>
             <div className='col-12 pl-0 mb-5'>
               <div className='row'>
@@ -89,7 +89,7 @@ class Dashboard extends Component {
                     <div className='col pl-0'>
                       <h4 style={{ fontWeight: 'bold' }}>Rekreacija</h4>
                       <div className='font-size-15'>
-                        Deca su kinestetička bića, ona i uče o svetu oko sebe krećući se kroz njega. Naši đaci nisu prikovani za stolice, pogleda uprtih u jednu tačku, oni su svugde, a najčešće u igrama koje imaju za cilj da ih motivišu da novo znanje primene na njima svojstven način.
+                        Deca su kinestetička bića, ona i uče o svetu oko sebe krećući se kroz njega. Naši đaci nisu prikovani za stolice, pogleda uprtih u tablu, oni su svugde, a najčešće u igrama koje imaju za cilj da ih motivišu da novo znanje primene na njima svojstven način.
                       </div>
                     </div>
                   </div>

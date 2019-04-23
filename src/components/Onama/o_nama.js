@@ -70,7 +70,7 @@ class Onama extends Component {
               </div>
               <div className='col-md-3'>
                 <CountTo className='count-style' to={150} speed={2000} />
-                <div className='font-family-fensy ff-size'>Ucenika</div>
+                <div className='font-family-fensy ff-size'>Učenika</div>
                 <div className='crca' />
                 { /*  <p>Some text</p> */ }
               </div>
@@ -93,7 +93,7 @@ class Onama extends Component {
               i <a className='a-color-hover' href='tel:+38163480277'>063/48-02-77</a>.
             </h5>
           </div>
-          <video className='mt-5 pl-3 pr-3 pl-xs-0 pr-xs-0' loop='' width='100%' height='100%'>
+          <video className='mt-5 pl-3 pr-3 pl-xs-0 pr-xs-0 w-100 h-100' loop=''>
             <source src='https://dl.dropboxusercontent.com/s/9u5hbu1ny00ot5t/KIZOA-Movie-Maker-9i9ptzgm.mp4?dl=0' />
           </video>
         </div>

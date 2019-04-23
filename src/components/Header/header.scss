@@ -118,6 +118,12 @@
             top: auto;
         }
     }
+    .link-hover:hover{
+        .nav-hover{
+            bottom: -4px;
+            top: auto;
+        }
+    }
 }
 @media ( min-width: 992px ) {
     .fixed-top-new{
@@ -187,7 +193,7 @@
         background: #ff7713;
         div{
             .a-color-hover {
-                color: white;
+                color: $white;
                 display: block;
             }
             i {
