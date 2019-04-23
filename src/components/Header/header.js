@@ -49,6 +49,7 @@ class Header extends Component {
       return pageSubTitle;
     }
   }
+
   render () {
     const { openHamburger } = this.state;
     $(window).on('scroll', function () {
@@ -67,10 +68,15 @@ class Header extends Component {
     });
 
     let style = {};
+    let flag = {};
+    let isDashbord = false;
     if (pathname === ROOT_ROUTE) {
-      style = {};
+      style = { minHeight: '650px' };
+      flag = { alignItems: 'center' };
+      isDashbord = true;
     } else {
-      style = { height: '300px' };
+      style = { height: '300px', minHeight: '300px' };
+      flag = { alignItems: 'flex-end' };
     }
     return (
       <div className='container-fluid position-relative p-0 background-header' style={style} id='top'>
@@ -130,10 +136,18 @@ class Header extends Component {
           </div>
         </div>
         <div className='container h-100'>
-          <div className='row text-center h-100' style={{ alignItems: 'flex-end' }}>
-            <div className='col-12 pb-5'>
-              {this.pageSubTitles()}
-            </div>
+          <div className='row text-center h-100' style={flag}>
+            {isDashbord
+              ? <div className='col-12 pt-5'>
+                <div className='table-font pt-5'>
+                  The beautiful thing about learning is nobody can take it away from you.<br />
+                  <p className='dashbord-p'>Lepa stvar u vezi sa učenjem je da vam ga niko ne moze oduzeti.</p>
+                </div>
+              </div>
+              : <div className='col-12 pb-5'>
+                {this.pageSubTitles()}
+              </div>
+            }
           </div>
         </div>
       </div>

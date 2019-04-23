@@ -1,6 +1,7 @@
 {
     "name": "Kontext Plus",
     "short_name": "Kontext Plus",
+    "start_url": "/?homescreen=1",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -11,9 +12,15 @@
             "src": "/android-chrome-256x256.png",
             "sizes": "256x256",
             "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
         }
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "standalone",
+    "description": "Sertifikovani kursevi jezika u samom centru Grocke za sve nivoe i uzraste. Pripremni časovi za školsko gradivo i međunarodne ispite. Kontakt: 065/47-93-883."
 }

@@ -131,7 +131,7 @@ class Kontakt extends Component {
                     className='form-control' />
                 </div>
                 <div className='col-sm-12 mb-2'>
-                  <button className='btn w-100 position-relative' type='submit' id='kontakt'>Pošalji</button>
+                  <button className='btn w-100 position-relative h-white' type='submit' id='kontakt'>Pošalji</button>
                 </div>
                 <small className='col-12'>* Obavezna polja</small>
                 {successMessage

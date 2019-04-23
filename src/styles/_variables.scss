@@ -203,7 +203,8 @@ $font-family-sans-serif: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", 
 $font-family-serif:      Roboto, Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Roboto, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
-$fancy-font: 'Indie Flower', cursive, Georgia, "Segoe UI" !default;
+$fancy-font: 'Indie Flower', cursive, Georgia, "Segoe UI", Roboto !default;
+$table-font: 'Gloria Hallelujah', cursive, Georgia, "Segoe UI", Roboto !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root: 16px !default;
