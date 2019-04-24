@@ -54,25 +54,21 @@ class Onama extends Component {
                 <CountTo className='count-style' to={10} speed={1234} />
                 <div className='font-family-fensy ff-size'>Projekata</div>
                 <div className='crca' />
-                { /*  <p>Some text</p> */ }
               </div>
               <div className='col-md-3'>
                 <CountTo className='count-style' to={300} speed={1200} />
                 <div className='font-family-fensy ff-size'>Polaznika</div>
                 <div className='crca' />
-                { /* <p>Some text</p> */ }
               </div>
               <div className='col-md-3'>
                 <CountTo className='count-style' to={50} speed={1300} />
                 <div className='font-family-fensy ff-size'>Kurseva</div>
                 <div className='crca' />
-                { /*   <p>Some text</p> */ }
               </div>
               <div className='col-md-3'>
                 <CountTo className='count-style' to={150} speed={2000} />
                 <div className='font-family-fensy ff-size'>Učenika</div>
                 <div className='crca' />
-                { /*  <p>Some text</p> */ }
               </div>
             </div>
           </div>

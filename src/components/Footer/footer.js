@@ -20,7 +20,7 @@ class Footer extends Component {
   }
   render () {
     return (
-      <footer className='container-fluid pl-xs-0 pr-xs-0' style={{ backgroundColor: '#3c3023', color: '#A0968A' }}>
+      <footer className='container-fluid pl-xs-0 pr-xs-0 footer-kp'>
         <div className='container p-0'>
           <div className='row pt-5 pb-4 m-0'>
             <div className='col-md-4'>

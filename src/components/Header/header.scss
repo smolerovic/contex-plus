@@ -36,7 +36,7 @@
         color: $yellow-kontex;
     }
 }
-.active{
+.activan{
     color: $yellow-kontex;
     .nav-hover{
         display: block;
@@ -112,7 +112,7 @@
     padding: 1.5rem 0rem 1.5rem 0rem;
 }
 .fixed-top-new{
-    .active{
+    .activan{
         .nav-hover{
             bottom: -4px;
             top: auto;
@@ -131,9 +131,11 @@
     color: $white;
 }
 .dashbord-p {
-    font-size: $font-size-root;
-    text-align: right;
-    padding-top: 50px;
+    font-size: 40px;
+    padding-top: 40px;
+}
+.carousel-item {
+    cursor: default;
 }
 @media ( min-width: 992px ) {
     .fixed-top-new{
@@ -200,14 +202,13 @@
         font-size: 38px;
     }
     .dashbord-p {
-        font-size: 15px;
-        padding-top: 40px;
+        font-size: 35px;
     }
 }
 
 @media ( max-width: 575px ) {
     .background-white-responsive{
-        background: #ff7713;
+        background: $yellow-kontex;
         div{
             .a-color-hover {
                 color: $white;
@@ -219,14 +220,18 @@
         }
     }
     .table-font{
-        font-size: 32px;
+        font-size: 30px;
+        padding-right: 15px;
     }
     .dashbord-p {
-        text-align: left;
+        font-size: 30px;
     }
 }
 @media ( max-width: 374px ) { 
     .logo-responsive {
         text-align: left;
+    }
+    .table-font, .dashbord-p{
+        font-size: 26px;
     }
 }

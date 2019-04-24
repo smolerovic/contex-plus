@@ -110,23 +110,23 @@ class Header extends Component {
                   <span className='hamburger' />
                 </div>
                 <div className={`navbar-collapse ${openHamburger ? 'collapse' : ''}`} >
-                  <Link className={`ml-5 pl-3 position-relative link-hover ${pathname === ROOT_ROUTE ? 'active' : ''}`} to={ROOT_ROUTE} onClick={this.hideSidebar}>
+                  <Link className={`ml-5 pl-3 position-relative link-hover ${pathname === ROOT_ROUTE ? 'activan' : ''}`} to={ROOT_ROUTE} onClick={this.hideSidebar}>
                     <div className='border-desni'>Početna</div>
                     <div className='nav-hover' />
                   </Link>
-                  <Link className={`pl-3 position-relative link-hover ${pathname === O_NAMA_RUTA ? 'active' : ''}`} to={O_NAMA_RUTA} onClick={this.hideSidebar}>
+                  <Link className={`pl-3 position-relative link-hover ${pathname === O_NAMA_RUTA ? 'activan' : ''}`} to={O_NAMA_RUTA} onClick={this.hideSidebar}>
                     <div className='border-desni'>O nama</div>
                     <div className='nav-hover' />
                   </Link>
-                  <Link className={`pl-3 position-relative link-hover ${pathname === KURSEVI_RUTA ? 'active' : ''}`} to={KURSEVI_RUTA} onClick={this.hideSidebar}>
+                  <Link className={`pl-3 position-relative link-hover ${pathname === KURSEVI_RUTA ? 'activan' : ''}`} to={KURSEVI_RUTA} onClick={this.hideSidebar}>
                     <div className='border-desni'>Kursevi</div>
                     <div className='nav-hover' />
                   </Link>
-                  <Link className={`pl-3 position-relative link-hover ${pathname === GALERIJA_RUTA ? 'active' : ''}`} to={GALERIJA_RUTA} onClick={this.hideSidebar}>
+                  <Link className={`pl-3 position-relative link-hover ${pathname === GALERIJA_RUTA ? 'activan' : ''}`} to={GALERIJA_RUTA} onClick={this.hideSidebar}>
                     <div className='border-desni'>Galerija</div>
                     <div className='nav-hover' />
                   </Link>
-                  <Link className={`pl-3 position-relative link-hover ${pathname === KONTACT_RUTA ? 'active' : ''}`} to={KONTACT_RUTA} onClick={this.hideSidebar}>
+                  <Link className={`pl-3 position-relative link-hover ${pathname === KONTACT_RUTA ? 'activan' : ''}`} to={KONTACT_RUTA} onClick={this.hideSidebar}>
                     <div className='border-desni'>Kontakt</div>
                     <div className='nav-hover' />
                   </Link>
@@ -140,8 +140,30 @@ class Header extends Component {
             {isDashbord
               ? <div className='col-12 pt-5'>
                 <div className='table-font pt-5'>
-                  The beautiful thing about learning is nobody can take it away from you.<br />
-                  <p className='dashbord-p'>Lepa stvar u vezi sa učenjem je da vam ga niko ne moze oduzeti.</p>
+                  <div className='carousel slide' data-ride='carousel' data-pause='false'>
+                    <div className='carousel-inner'>
+                      <div className='carousel-item active'>
+                        &quot;The beautiful thing about learning is that no one can take it away from you.&quot;<br />
+                        <p className='text-right dashbord-p'>- B. B. KING</p>
+                      </div>
+                      <div className='carousel-item'>
+                      &quot;Učenje nije produkt nastavničkog predavanja. Učenje je produkt aktivnosti onih koji uče.&quot;<br />
+                        <p className='text-right dashbord-p'>- Dzon Holt</p>
+                      </div>
+                      <div className='carousel-item'>
+                        &quot;Tell me and I forget. Teach me and I remember. Involve me and I learn.&quot;<br />
+                        <p className='text-right dashbord-p'>- Xun Kuang</p>
+                      </div>
+                      <div className='carousel-item'>
+                      &quot;Um nije sud koji treba da se ispuni nego vatra koja treba da se rasplamsa.&quot;<br />
+                        <p className='text-right dashbord-p'>- Plutarh</p>
+                      </div>
+                      <div className='carousel-item'>
+                      &quot;You can get help from teachers, but you are going to have to learn a lot by yourself, sitting alone in a room.&quot;<br />
+                        <p className='text-right dashbord-p'>- Dr Seuss</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               : <div className='col-12 pb-5'>

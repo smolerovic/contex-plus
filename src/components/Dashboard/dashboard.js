@@ -51,7 +51,7 @@ class Dashboard extends Component {
           </div>
           <div className='row mt-4 pr-3' style={{ color: 'black' }}>
             <div className='col-12 pr-xs-0 text-center mb-5 font-family-fensy' style={{ fontSize: '33px', fontWeight: 'bold' }}>
-              Naša škola je <b className='pl-2 pr-2 pr-xs-0 pl-xs-0' style={{ background: '#ff7713', color: 'white', whiteSpace: 'nowrap' }}>najbolji izbor</b> za Vas
+              Naša škola je <b className='pl-2 pr-2 pr-xs-0 pl-xs-0 our-school-is'>najbolji izbor</b> za Vas
             </div>
             <div className='col-12 pl-0 mb-5'>
               <div className='row'>
