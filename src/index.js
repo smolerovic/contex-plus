@@ -7,15 +7,14 @@ import { createStore, applyMiddleware } from 'redux';
 import reducers from './reducers';
 import * as serviceWorker from './serviceWorker';
 import reduxThunk from 'redux-thunk';
-import createBrowserHistory from 'history/createBrowserHistory';
-
+import { createBrowserHistory } from 'history';
 import App from './App';
 import Kontakt from './components/Kontakt/kontakt';
 import Dashboard from './components/Dashboard/dashboard';
 import Onama from './components/Onama/o_nama';
 import Kursevi from './components/Kursevi/kursevi';
 import Galerija from './components/Galerija/galerija';
-import ErrorPage from './components/ErrorPage/errorPage';
+import ErrorPage from './components/ErrorPage';
 
 import { KONTACT_RUTA, ROOT_ROUTE, O_NAMA_RUTA, GALERIJA_RUTA, KURSEVI_RUTA } from './helper/routes';
 
