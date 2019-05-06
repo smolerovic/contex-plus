@@ -16,7 +16,7 @@ import Kursevi from './components/Kursevi/kursevi';
 import Galerija from './components/Galerija/galerija';
 import ErrorPage from './components/ErrorPage';
 
-import { KONTACT_RUTA, ROOT_ROUTE, O_NAMA_RUTA, GALERIJA_RUTA, KURSEVI_RUTA } from './helper/routes';
+import { KONTACT_RUTA, ROOT_ROUTE, O_NAMA_RUTA, GALERIJA_RUTA, KURSEVI_RUTA, ERROR_ROUTA } from './helper/routes';
 
 const history = createBrowserHistory();
 window.browserHistory = history;
@@ -34,7 +34,7 @@ ReactDOM.render(
           <Route excat path={KURSEVI_RUTA} component={Kursevi} />
           <Route excat path={GALERIJA_RUTA} component={Galerija} />
           <Route excat path={KONTACT_RUTA} component={Kontakt} />
-          <Route path='*' component={ErrorPage} />
+          <Route path={ERROR_ROUTA} component={ErrorPage} />
         </Switch>
       </App>
     </Router>

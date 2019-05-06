@@ -100,11 +100,11 @@ class Header extends Component {
             <div className='row pr-3 pl-3 container' style={{ margin: '0px auto' }}>
               <div className='logo-responsive'>
                 <a href={ROOT_ROUTE}>
-                  <img src={Logo} alt='Kontext Plus - Škola stranih jezika logo' style={{ width: '230px', height: '100%' }} />
+                  <img src={Logo} alt='Kontext Plus - Škola stranih jezika logo' style={{ width: '230px', height: '79px' }} />
                 </a>
               </div>
               <nav className='navbar-expand-lg'>
-                <div className='navbar-toggler navbar-toggler-right button-header-hamburger' onClick={() => this.setState({ openHamburger: !openHamburger })}>
+                <div className='navbar-toggler navbar-toggler-right button-header-hamburger pointer' onClick={() => this.setState({ openHamburger: !openHamburger })}>
                   <span className='hamburger' />
                   <span className='hamburger' />
                   <span className='hamburger' />
