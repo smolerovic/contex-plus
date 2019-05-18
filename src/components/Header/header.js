@@ -100,7 +100,7 @@ class Header extends Component {
             <div className='row pr-3 pl-3 container' style={{ margin: '0px auto' }}>
               <div className='logo-responsive'>
                 <a href={ROOT_ROUTE}>
-                  <img src={Logo} alt='Kontext Plus - Škola stranih jezika logo' style={{ width: '230px', height: '79px' }} />
+                  <img src={Logo} alt='Kontext Plus - Škola stranih jezika logo' />
                 </a>
               </div>
               <nav className='navbar-expand-lg'>

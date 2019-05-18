@@ -5,7 +5,7 @@ import { ROOT_ROUTE, KONTACT_RUTA, O_NAMA_RUTA, GALERIJA_RUTA, KURSEVI_RUTA } fr
 class HelmetHeader extends Component {
   pageSubTitles = () => {
     const { pathname } = window.location;
-    let subtitlePage;
+    let subtitlePage = '';
     let description = 'Sertifikovani kursevi jezika u samom centru Grocke za sve nivoe i uzraste. Pripremni časovi za školsko gradivo i međunarodne ispite. Kontakt: 065/47-93-883.';
     switch (pathname) {
     case ROOT_ROUTE:
@@ -35,7 +35,7 @@ class HelmetHeader extends Component {
   render () {
     const { pageTitle, description } = this.props;
     const titlovi = this.pageSubTitles();
-    let title = titlovi.subtitlePage || pageTitle !== '' ? `Kontext Plus - ${titlovi.subtitlePage || pageTitle}` : 'Kontext Plus - Škola stranih jezika';
+    let title = titlovi.subtitlePage !== '' || pageTitle !== '' ? `Kontext Plus - ${titlovi.subtitlePage || pageTitle}` : 'Kontext Plus - Škola stranih jezika';
     return (
       <Helmet>
         <meta name='tags' content='engleski, nemački, italijanski, kursevi jezika, Grocka, Umčari, Brestovik, Vrčin, Boleč, Leštane, Vinča, Kaluđerica, pripremni časovi za osnovnu školu, časovi engleskog za srednju školu, časovi nemačkog za srednju školu, časovi engleskog za osnovnu i srednju školu, kurs engleskog za vrtić, engleski za najmlađe, kursevi jezika za decu, kursevi jezika za odrasle, Kembridž ispiti, međunarodni sertifikati, CEA, FCE, KET, PET, Movers, Flyers, Starters, Goethe, nemački za početnike, konverzacijski kursevi, individualni kursevi jezika, testirajte svoje znanje jezika, sertifikovani testovi, sertifikovani kursevi, engleski A1, engleski A2 engleski B1, engleski B2, engleski C1, nemački A1, nemački A2, nemački B1, nemački B2, škola stranih jezika Grocka, prevod nemački, prevod engleski, prevodilac engleskog, prevodilac nemačkog, prevodilac italijanskog' />
