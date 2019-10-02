@@ -6,7 +6,7 @@ class HelmetHeader extends Component {
   pageSubTitles = () => {
     const { pathname } = window.location;
     let subtitlePage = '';
-    let description = 'Sertifikovani kursevi jezika u samom centru Grocke za sve nivoe i uzraste. Pripremni časovi za školsko gradivo i međunarodne ispite. Kontakt: 065/47-93-883.';
+    let description = 'Sertifikovani kursevi stranih jezika u samom centru Grocke za sve nivoe i uzraste. Pripremni časovi za školsko gradivo i međunarodne ispite. Kontakt: 065/47-93-883.';
     switch (pathname) {
     case ROOT_ROUTE:
       subtitlePage = 'Škola stranih jezika';
@@ -17,7 +17,7 @@ class HelmetHeader extends Component {
       return { subtitlePage, description };
     case O_NAMA_RUTA:
       subtitlePage = 'O nama';
-      description = 'Naša škola jezika nastala je iz želje da poboljšamo kvalitet obrazovanja, i poznavanje određenih stranih jezika naših polaznika uz najnovije metode i savremene programe.';
+      description = 'Naša škola stranih jezika nastala je iz želje da poboljšamo kvalitet obrazovanja, i poznavanje određenih stranih jezika naših polaznika uz najnovije metode i savremene programe.';
       return { subtitlePage, description };
     case GALERIJA_RUTA:
       subtitlePage = 'Galerija';
@@ -33,18 +33,20 @@ class HelmetHeader extends Component {
   }
 
   render () {
-    const { pageTitle, description } = this.props;
-    const titlovi = this.pageSubTitles();
-    let title = titlovi.subtitlePage !== '' || pageTitle !== '' ? `Kontext Plus - ${titlovi.subtitlePage || pageTitle}` : 'Kontext Plus - Škola stranih jezika';
+    const { pageTitle, pageDescription } = this.props;
+    const { subtitlePage, description } = this.pageSubTitles();
+    let title = subtitlePage !== '' || pageTitle !== '' ? `Kontext Plus - ${subtitlePage || pageTitle}` : 'Kontext Plus - Škola stranih jezika';
+
     return (
       <Helmet>
-        <meta name='tags' content='engleski, nemački, italijanski, kursevi jezika, Grocka, Umčari, Brestovik, Vrčin, Boleč, Leštane, Vinča, Kaluđerica, pripremni časovi za osnovnu školu, časovi engleskog za srednju školu, časovi nemačkog za srednju školu, časovi engleskog za osnovnu i srednju školu, kurs engleskog za vrtić, engleski za najmlađe, kursevi jezika za decu, kursevi jezika za odrasle, Kembridž ispiti, međunarodni sertifikati, CEA, FCE, KET, PET, Movers, Flyers, Starters, Goethe, nemački za početnike, konverzacijski kursevi, individualni kursevi jezika, testirajte svoje znanje jezika, sertifikovani testovi, sertifikovani kursevi, engleski A1, engleski A2 engleski B1, engleski B2, engleski C1, nemački A1, nemački A2, nemački B1, nemački B2, škola stranih jezika Grocka, prevod nemački, prevod engleski, prevodilac engleskog, prevodilac nemačkog, prevodilac italijanskog' />
-        <meta name='keywords' content='Kontext plus, Škola stranih jezika Grocka, privatni časovi engleskog, privatni časovi nemačkog, kurs italijanskog, pripremni kursevi za međunaredne ispite, Priprema za Goethe, nemački za početnike, engleski za decu Grocka, Kontext Grocka, Kontext Plus Grocka, engleski za decu Vrčin, engleski za decu Umčari, engleski za decu Vinča, kako brzo savladati engleski, kada je najbolje za dete da uči drugi jezik, engleska gramatika, rad u inostranstvu, kako dobiti sertifikat o znanju jezika, Gročanska čaršija, jeftini kursevi jezika, popraviti govorni engleski, konverzacija na nemačkom, nemački jezik početni nivo Grocka' />
-        <meta name='description' content={titlovi.description || description} />
+        <meta name='tags' content='engleski jezik, nemački jezik, italijanski jezik, kursevi jezika, Grocka, Umčari, Brestovik, Vrčin, Boleč, Leštane, Vinča, Kaluđerica, pripremni časovi za osnovnu školu, časovi engleskog za srednju školu, časovi nemačkog za srednju školu, časovi engleskog za osnovnu i srednju školu, kurs engleskog za vrtić, engleski za najmlađe, kursevi jezika za decu, kursevi jezika za odrasle, Kembridž ispiti, međunarodni sertifikati, CEA, FCE, KET, PET, Movers, Flyers, Starters, Goethe, nemački za početnike, konverzacijski kursevi, individualni kursevi jezika, testirajte svoje znanje jezika, sertifikovani testovi, sertifikovani kursevi, engleski A1, engleski A2 engleski B1, engleski B2, engleski C1, nemački A1, nemački A2, nemački B1, nemački B2, škola stranih jezika Grocka, prevod nemački, prevod engleski, prevodilac engleskog, prevodilac nemačkog, prevodilac italijanskog' />
+        <meta name='keywords' content='Kontext plus, Škola stranih jezika Grocka, privatni časovi engleskog, privatni časovi nemačkog, kurs italijanskog, pripremni kursevi za međunaredne ispite, Priprema za Goethe, nemački za početnike, engleski za decu Grocka, Kontext Grocka, Kontext Plus Grocka, engleski za decu Vrčin, engleski za decu Umčari, engleski za decu Vinča, kako brzo savladati engleski, kada je najbolje za dete da uči drugi jezik, engleska gramatika, rad u inostranstvu, kako dobiti sertifikat o znanju jezika, Gročanska čaršija, jeftini kursevi jezika, popraviti govorni engleski, konverzacija na nemačkom, nemački jezik početni nivo' />
+        <meta name='description' content={description || pageDescription} />
         <meta property='og:url' content='http://kontextplus.rs' />
         <meta property='og:type' content='website' />
         <meta property='og:title' content={title} />
-        <meta property='og:description' content={titlovi.description || description} />
+        <meta property='og:description' content={description || pageDescription} />
+        <meta property="og:image" content="http://www.kontextplus.rs/home_school-min.jpg" />
         <title>{ title }</title>
       </Helmet>
     );

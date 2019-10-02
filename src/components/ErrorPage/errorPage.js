@@ -9,7 +9,7 @@ class ErrorPage extends Component {
   render () {
     return (
       <div className='container-fluid  h-100' style={{ background: '#ff7713' }}>
-        <HelmetHeader pageTitle='Stranica nije pronadjena' description='Sertifikovani kursevi jezika u samom centru Grocke za sve nivoe i uzraste. Pripremni časovi za školsko gradivo i međunarodne ispite. Kontakt: 065/47-93-883.' />
+        <HelmetHeader pageTitle='Stranica nije pronadjena' pageDescription='Sertifikovani kursevi jezika u samom centru Grocke za sve nivoe i uzraste. Pripremni časovi za školsko gradivo i međunarodne ispite. Kontakt: 065/47-93-883.' />
         <div className='row align-items-center text-center h-50'>
           <div className='w-100'>
             <h1 style={{ fontSize: '50px' }}>Ooops! <br />Stranica nije pronadjena</h1>

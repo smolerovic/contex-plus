@@ -7,6 +7,7 @@ import { KONTACT_RUTA, O_NAMA_RUTA, GALERIJA_RUTA, KURSEVI_RUTA } from '../../he
 import LinkedIn from '../../images/linkedin-min.png';
 import Stefan from '../../images/krug-min.png';
 import FacebookFooter from '../../images/facebook-png-min.png';
+import Oa from '../../images/otkupantikviteta.gif';
 
 class Footer extends Component {
   scrollToTheSection (id) {
@@ -22,7 +23,7 @@ class Footer extends Component {
     return (
       <footer className='container-fluid pl-xs-0 pr-xs-0 footer-kp'>
         <div className='container p-0'>
-          <div className='row pt-5 pb-4 m-0'>
+          <div className='row pt-5 pb-3 m-0'>
             <div className='col-md-4'>
               <h3>Prečice</h3>
               <div className='row'>
@@ -37,6 +38,11 @@ class Footer extends Component {
                     <li><Link to={GALERIJA_RUTA}>Galerija</Link> </li>
                     <li><Link to={KONTACT_RUTA}>Kontakt</Link> </li>
                   </ul>
+                </div>
+                <div className='col-12 mt-2 mb-3'>
+                  <a href='http://www.otkupantikviteta.com/' target='_blank' rel='noopener noreferrer'>
+                    <img src={Oa} alt='asd' width='100%' />
+                  </a>
                 </div>
               </div>
             </div>
