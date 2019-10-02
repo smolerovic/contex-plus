@@ -42,11 +42,6 @@ class HelmetHeader extends Component {
         <meta name='tags' content='engleski jezik, nemački jezik, italijanski jezik, kursevi jezika, Grocka, Umčari, Brestovik, Vrčin, Boleč, Leštane, Vinča, Kaluđerica, pripremni časovi za osnovnu školu, časovi engleskog za srednju školu, časovi nemačkog za srednju školu, časovi engleskog za osnovnu i srednju školu, kurs engleskog za vrtić, engleski za najmlađe, kursevi jezika za decu, kursevi jezika za odrasle, Kembridž ispiti, međunarodni sertifikati, CEA, FCE, KET, PET, Movers, Flyers, Starters, Goethe, nemački za početnike, konverzacijski kursevi, individualni kursevi jezika, testirajte svoje znanje jezika, sertifikovani testovi, sertifikovani kursevi, engleski A1, engleski A2 engleski B1, engleski B2, engleski C1, nemački A1, nemački A2, nemački B1, nemački B2, škola stranih jezika Grocka, prevod nemački, prevod engleski, prevodilac engleskog, prevodilac nemačkog, prevodilac italijanskog' />
         <meta name='keywords' content='Kontext plus, Škola stranih jezika Grocka, privatni časovi engleskog, privatni časovi nemačkog, kurs italijanskog, pripremni kursevi za međunaredne ispite, Priprema za Goethe, nemački za početnike, engleski za decu Grocka, Kontext Grocka, Kontext Plus Grocka, engleski za decu Vrčin, engleski za decu Umčari, engleski za decu Vinča, kako brzo savladati engleski, kada je najbolje za dete da uči drugi jezik, engleska gramatika, rad u inostranstvu, kako dobiti sertifikat o znanju jezika, Gročanska čaršija, jeftini kursevi jezika, popraviti govorni engleski, konverzacija na nemačkom, nemački jezik početni nivo' />
         <meta name='description' content={description || pageDescription} />
-        <meta property='og:url' content='http://kontextplus.rs' />
-        <meta property='og:type' content='website' />
-        <meta property='og:title' content={title} />
-        <meta property='og:description' content={description || pageDescription} />
-        <meta property="og:image" content="http://www.kontextplus.rs/home_school-min.jpg" />
         <title>{ title }</title>
       </Helmet>
     );
