@@ -1,5 +1,5 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, { Component } from 'react';
-import './header.scss';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
 
@@ -8,6 +8,8 @@ import { pageView } from '../../helper/googleAnalytics';
 import { CURRENT_URL } from '../../actions/types';
 
 import Logo from '../../images/kontex_logo-min.png';
+
+import './header.scss';
 
 class Header extends Component {
   constructor (props) {
@@ -26,7 +28,7 @@ class Header extends Component {
     }
   }
 
-  hideSidebar = () => {
+  handleHideSidebar = () => {
     if (window.innerWidth < 992) {
       document.getElementsByClassName('navbar-toggler')[0].click();
       this.setState({ open: false });
@@ -88,10 +90,10 @@ class Header extends Component {
               <i className='fa fa-envelope mr-2' /><a className='a-color-hover' href='mailto:kontext.grocka@gmail.com'>kontext.grocka@gmail.com</a>
             </div>
             <div className='col-md-2 text-right'>
-              <a href='https://www.facebook.com/kontextplusgrocka/' target='_blank' rel='noopener noreferrer' className='mr-3'>
+              <a href='https://www.facebook.com/kontextplusgrocka/' target='_blank' rel='noopener' className='mr-3'>
                 <i className='fa fa-facebook-f white-hover' title='Facebook' />
               </a>
-              <a href='https://www.instagram.com/kontext_grocka/' target='_blank' rel='noopener noreferrer'>
+              <a href='https://www.instagram.com/kontext_grocka/' target='_blank' rel='noopener'>
                 <i className='fa fa-instagram white-hover' title='Instagram' />
               </a>
             </div>
@@ -109,24 +111,24 @@ class Header extends Component {
                   <span className='hamburger' />
                   <span className='hamburger' />
                 </div>
-                <div className={`navbar-collapse ${openHamburger ? 'collapse' : ''}`} >
-                  <Link className={`ml-5 pl-3 position-relative link-hover ${pathname === ROOT_ROUTE ? 'activan' : ''}`} to={ROOT_ROUTE} onClick={this.hideSidebar}>
+                <div className={`navbar-collapse ${openHamburger ? 'collapse' : ''}`}>
+                  <Link className={`ml-5 pl-3 position-relative link-hover ${pathname === ROOT_ROUTE ? 'activan' : ''}`} to={ROOT_ROUTE} onClick={this.handleHideSidebar}>
                     <div className='border-desni'>Početna</div>
                     <div className='nav-hover' />
                   </Link>
-                  <Link className={`pl-3 position-relative link-hover ${pathname === O_NAMA_RUTA ? 'activan' : ''}`} to={O_NAMA_RUTA} onClick={this.hideSidebar}>
+                  <Link className={`pl-3 position-relative link-hover ${pathname === O_NAMA_RUTA ? 'activan' : ''}`} to={O_NAMA_RUTA} onClick={this.handleHideSidebar}>
                     <div className='border-desni'>O nama</div>
                     <div className='nav-hover' />
                   </Link>
-                  <Link className={`pl-3 position-relative link-hover ${pathname === KURSEVI_RUTA ? 'activan' : ''}`} to={KURSEVI_RUTA} onClick={this.hideSidebar}>
+                  <Link className={`pl-3 position-relative link-hover ${pathname === KURSEVI_RUTA ? 'activan' : ''}`} to={KURSEVI_RUTA} onClick={this.handleHideSidebar}>
                     <div className='border-desni'>Kursevi</div>
                     <div className='nav-hover' />
                   </Link>
-                  <Link className={`pl-3 position-relative link-hover ${pathname === GALERIJA_RUTA ? 'activan' : ''}`} to={GALERIJA_RUTA} onClick={this.hideSidebar}>
+                  <Link className={`pl-3 position-relative link-hover ${pathname === GALERIJA_RUTA ? 'activan' : ''}`} to={GALERIJA_RUTA} onClick={this.handleHideSidebar}>
                     <div className='border-desni'>Galerija</div>
                     <div className='nav-hover' />
                   </Link>
-                  <Link className={`pl-3 position-relative link-hover ${pathname === KONTACT_RUTA ? 'activan' : ''}`} to={KONTACT_RUTA} onClick={this.hideSidebar}>
+                  <Link className={`pl-3 position-relative link-hover ${pathname === KONTACT_RUTA ? 'activan' : ''}`} to={KONTACT_RUTA} onClick={this.handleHideSidebar}>
                     <div className='border-desni'>Kontakt</div>
                     <div className='nav-hover' />
                   </Link>
@@ -165,11 +167,10 @@ class Header extends Component {
                     </div>
                   </div>
                 </div>
-              </div>
+                </div>
               : <div className='col-12 pb-5'>
                 {this.pageSubTitles()}
-              </div>
-            }
+                </div>}
           </div>
         </div>
       </div>

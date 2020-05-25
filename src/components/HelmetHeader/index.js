@@ -1,9 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Helmet from 'react-helmet';
+
 import { ROOT_ROUTE, KONTACT_RUTA, O_NAMA_RUTA, GALERIJA_RUTA, KURSEVI_RUTA } from '../../helper/routes';
 
-class HelmetHeader extends Component {
-  pageSubTitles = () => {
+const HelmetHeader = (props) => {
+  const {
+    pageTitle = '',
+    pageDescription = ''
+  } = props;
+
+  const pageSubTitles = () => {
     const { pathname } = window.location;
     let subtitlePage = '';
     let description = 'Sertifikovani kursevi stranih jezika u samom centru Grocke za sve nivoe i uzraste. Pripremni časovi za školsko gradivo i međunarodne ispite. Kontakt: 065/47-93-883.';
@@ -30,22 +36,19 @@ class HelmetHeader extends Component {
     default:
       return [{ subtitlePage, description }];
     }
-  }
+  };
 
-  render () {
-    const { pageTitle, pageDescription } = this.props;
-    const { subtitlePage, description } = this.pageSubTitles();
-    let title = subtitlePage !== '' || pageTitle !== '' ? `Kontext Plus - ${subtitlePage || pageTitle}` : 'Kontext Plus - Škola stranih jezika';
+  const { subtitlePage, description } = pageSubTitles();
+  const title = subtitlePage !== '' || pageTitle !== '' ? `Kontext Plus - ${subtitlePage || pageTitle}` : 'Kontext Plus - Škola stranih jezika';
 
-    return (
-      <Helmet>
-        <meta name='tags' content='engleski jezik, nemački jezik, italijanski jezik, kursevi jezika, Grocka, Umčari, Brestovik, Vrčin, Boleč, Leštane, Vinča, Kaluđerica, pripremni časovi za osnovnu školu, časovi engleskog za srednju školu, časovi nemačkog za srednju školu, časovi engleskog za osnovnu i srednju školu, kurs engleskog za vrtić, engleski za najmlađe, kursevi jezika za decu, kursevi jezika za odrasle, Kembridž ispiti, međunarodni sertifikati, CEA, FCE, KET, PET, Movers, Flyers, Starters, Goethe, nemački za početnike, konverzacijski kursevi, individualni kursevi jezika, testirajte svoje znanje jezika, sertifikovani testovi, sertifikovani kursevi, engleski A1, engleski A2 engleski B1, engleski B2, engleski C1, nemački A1, nemački A2, nemački B1, nemački B2, škola stranih jezika Grocka, prevod nemački, prevod engleski, prevodilac engleskog, prevodilac nemačkog, prevodilac italijanskog' />
-        <meta name='keywords' content='Kontext plus, Škola stranih jezika Grocka, privatni časovi engleskog, privatni časovi nemačkog, kurs italijanskog, pripremni kursevi za međunaredne ispite, Priprema za Goethe, nemački za početnike, engleski za decu Grocka, Kontext Grocka, Kontext Plus Grocka, engleski za decu Vrčin, engleski za decu Umčari, engleski za decu Vinča, kako brzo savladati engleski, kada je najbolje za dete da uči drugi jezik, engleska gramatika, rad u inostranstvu, kako dobiti sertifikat o znanju jezika, Gročanska čaršija, jeftini kursevi jezika, popraviti govorni engleski, konverzacija na nemačkom, nemački jezik početni nivo' />
-        <meta name='description' content={description || pageDescription} />
-        <title>{ title }</title>
-      </Helmet>
-    );
-  }
-}
+  return (
+    <Helmet>
+      <meta name='tags' content='engleski jezik, nemački jezik, italijanski jezik, kursevi jezika, Grocka, Umčari, Brestovik, Vrčin, Boleč, Leštane, Vinča, Kaluđerica, pripremni časovi za osnovnu školu, časovi engleskog za srednju školu, časovi nemačkog za srednju školu, časovi engleskog za osnovnu i srednju školu, kurs engleskog za vrtić, engleski za najmlađe, kursevi jezika za decu, kursevi jezika za odrasle, Kembridž ispiti, međunarodni sertifikati, CEA, FCE, KET, PET, Movers, Flyers, Starters, Goethe, nemački za početnike, konverzacijski kursevi, individualni kursevi jezika, testirajte svoje znanje jezika, sertifikovani testovi, sertifikovani kursevi, engleski A1, engleski A2 engleski B1, engleski B2, engleski C1, nemački A1, nemački A2, nemački B1, nemački B2, škola stranih jezika Grocka, prevod nemački, prevod engleski, prevodilac engleskog, prevodilac nemačkog, prevodilac italijanskog' />
+      <meta name='keywords' content='Kontext plus, Škola stranih jezika Grocka, privatni časovi engleskog, privatni časovi nemačkog, kurs italijanskog, pripremni kursevi za međunaredne ispite, Priprema za Goethe, nemački za početnike, engleski za decu Grocka, Kontext Grocka, Kontext Plus Grocka, engleski za decu Vrčin, engleski za decu Umčari, engleski za decu Vinča, kako brzo savladati engleski, kada je najbolje za dete da uči drugi jezik, engleska gramatika, rad u inostranstvu, kako dobiti sertifikat o znanju jezika, Gročanska čaršija, jeftini kursevi jezika, popraviti govorni engleski, konverzacija na nemačkom, nemački jezik početni nivo' />
+      <meta name='description' content={description || pageDescription} />
+      <title>{title}</title>
+    </Helmet>
+  );
+};
 
 export default HelmetHeader;

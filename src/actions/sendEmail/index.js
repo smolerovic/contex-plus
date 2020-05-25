@@ -1,4 +1,5 @@
 import axios from 'axios';
+
 import { SUCCESS_MESSAGE, ERROR_MESSAGE, REQUEST_SENT, RESPONSE_RECEIVED, MESSAGE_DURATION } from '../types';
 
 // const ROOT_URL = 'http://localhost:3131/send';
@@ -33,7 +34,7 @@ export function removeSuccessMessage () {
 }
 
 function convertToJSON ({ ime, email, naslov, poruka }) {
-  let req = {};
+  const req = {};
   req.ime = ime;
   req.email = email;
   req.naslov = naslov;

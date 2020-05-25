@@ -16,7 +16,7 @@ export function pageView (url) {
     ga('send', 'pageview');
     // console.log('Google Analytics: Sending pageview', window.location.pathname);
     if (routesForGoogleAnalytich(window.location.pathname, true)) {
-      gtag('config', GOOGLE_ANALYTICS_KEY, { 'page_path': url });
+      gtag('config', GOOGLE_ANALYTICS_KEY, { page_path: url });
       // console.log('Google Analytics: gtag event: ', window.location.pathname);
     }
     ReactGA.initialize(GOOGLE_ANALYTICS_KEY);

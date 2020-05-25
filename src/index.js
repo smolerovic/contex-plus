@@ -11,7 +11,7 @@ import { createBrowserHistory } from 'history';
 import App from './App';
 import Kontakt from './components/Kontakt/kontakt';
 import Dashboard from './components/Dashboard/dashboard';
-import Onama from './components/Onama/o_nama';
+import Onama from './components/Onama/oNama';
 import Kursevi from './components/Kursevi/kursevi';
 import Galerija from './components/Galerija/galerija';
 import ErrorPage from './components/ErrorPage';

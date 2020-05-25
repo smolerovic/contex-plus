@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Lightbox from 'react-image-lightbox';
 
 import Slika1 from '../../images/galerija/p1.jpg';
@@ -35,50 +35,40 @@ const images = [
   Slika15
 ];
 
-class Galerija extends Component {
-  constructor (props) {
-    super(props);
-    this.state = {
-      photoIndex: 0,
-      isOpen: false
-    };
-  }
-  componentDidMount () {
-    window.scrollTo(0, 0);
-  }
-  render () {
-    const { photoIndex, isOpen } = this.state;
-    return (
-      <div className='container pt-4 pb-4'>
-        <div className='row'>
-          {images.map((newLocal, index) => {
-            return (
-              <div className='col-md-4 pb-3' key={index}>
-                <img className='pointer w-100' src={newLocal} onClick={() => this.setState({ isOpen: true, photoIndex: index })} alt={'Slika ' + index} />
-              </div>
-            );
-          })}
-          {isOpen && (
-            <Lightbox
-              mainSrc={images[photoIndex]}
-              nextSrc={images[(photoIndex + 1) % images.length]}
-              prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-              onCloseRequest={() => this.setState({ isOpen: false })}
-              onMovePrevRequest={() =>
-                this.setState({
-                  photoIndex: (photoIndex + images.length - 1) % images.length
-                })
-              }
-              onMoveNextRequest={() =>
-                this.setState({
-                  photoIndex: (photoIndex + 1) % images.length
-                })
-              }
-            />
-          )}
-        </div>
+const Galerija = () => {
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOnClick = (index) => {
+    setIsOpen(true);
+    setPhotoIndex(index);
+  };
+
+  return (
+    <div className='container pt-4 pb-4'>
+      <div className='row'>
+        {images.map((newLocal, index) => {
+          return (
+            <div className='col-md-4 pb-3' key={index}>
+              <img className='pointer w-100' src={newLocal} onClick={() => handleOnClick(index)} alt={'Slika ' + index} />
+            </div>
+          );
+        })}
+        {isOpen && (
+          <Lightbox
+            mainSrc={images[photoIndex]}
+            nextSrc={images[(photoIndex + 1) % images.length]}
+            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+            onCloseRequest={() => setIsOpen(false)}
+            onMovePrevRequest={() =>
+              setPhotoIndex((photoIndex + images.length - 1) % images.length)}
+            onMoveNextRequest={() =>
+              setPhotoIndex((photoIndex + 1) % images.length)}
+          />
+        )}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
 export default Galerija;

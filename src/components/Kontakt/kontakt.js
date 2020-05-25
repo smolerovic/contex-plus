@@ -1,28 +1,34 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Field, reduxForm, reset } from 'redux-form';
-import './kontakt.scss';
 
 import * as validations from '../../helper/validation';
 import * as actions from '../../actions/sendEmail';
+
 import Loader from '../Loader/loader';
+
+import './kontakt.scss';
 
 const renderField = ({ input, id, label, type, meta: { touched, error, warning } }) => (
   <fieldset className={'mb-2 position-relative p-0 ' + (touched && error ? 'has-danger ' : (touched && warning ? 'has-warning ' : (touched ? '' : '')))}>
-    <input {...input} id={id} type={type} placeholder={label}
+    <input
+      {...input} id={id} type={type} placeholder={label}
       className={'floating-input form-control ' + (touched && error ? ' form-control-danger '
         : (touched && warning ? ' form-control-warning '
-          : (touched ? '' : '')))} />
+          : (touched ? '' : '')))}
+    />
     <div className='form-control-feedback'>{touched && ((error && <span>{error}</span>) || (warning && <span>{warning}</span>))}</div>
   </fieldset>
 );
 
 const renderFieldTextArea = ({ input, id, label, type, meta: { touched, error, warning } }) => (
   <fieldset className={'mb-2 position-relative p-0 ' + (touched && error ? 'has-danger ' : (touched && warning ? 'has-warning ' : (touched ? '' : '')))}>
-    <textarea {...input} id={id} type={type} placeholder={label}
+    <textarea
+      {...input} id={id} type={type} placeholder={label}
       className={'floating-input form-control ' + (touched && error ? ' form-control-danger '
         : (touched && warning ? ' form-control-warning '
-          : (touched ? '' : '')))} />
+          : (touched ? '' : '')))}
+    />
     <div className='form-control-feedback'>{touched && ((error && <span>{error}</span>) || (warning && <span>{warning}</span>))}</div>
   </fieldset>
 );
@@ -32,9 +38,6 @@ class Kontakt extends Component {
     this.state = {
       scrolledToTop: false
     };
-  }
-  componentDidMount () {
-    window.scrollTo(0, 0);
   }
 
   handleFormSubmit = (formProps) => {
@@ -54,7 +57,7 @@ class Kontakt extends Component {
       if (!scrolledToTop) {
         try {
           setTimeout(() => {
-            let element = document.getElementById('kontakt');
+            const element = document.getElementById('kontakt');
             element.scrollIntoView({ block: 'start', behavior: 'smooth' });
           }, 500);
           this.setState({ scrolledToTop: true });
@@ -102,52 +105,58 @@ class Kontakt extends Component {
               <h1 className='mb-5'>Online kontakt</h1>
               <form onSubmit={handleSubmit(this.handleFormSubmit)} className='row'>
                 <div className='col-lg-6 col-md-12 col-sm-6 mb-2'>
-                  <Field name='ime'
+                  <Field
+                    name='ime'
                     label='Vaše Ime *'
                     {...ime}
                     type='text'
                     component={renderField}
-                    className='form-control' />
+                    className='form-control'
+                  />
                 </div>
                 <div className='col-lg-6 col-md-12 col-sm-6 mb-2'>
-                  <Field name='email'
+                  <Field
+                    name='email'
                     label='Vaš Email *'
                     {...email}
                     component={renderField}
-                    className='form-control' />
+                    className='form-control'
+                  />
                 </div>
                 <div className='col-sm-12 mb-2'>
-                  <Field name='naslov'
+                  <Field
+                    name='naslov'
                     label='Naslov'
                     {...naslov}
                     component={renderField}
-                    className='form-control' />
+                    className='form-control'
+                  />
                 </div>
                 <div className='col-sm-12 mb-2'>
-                  <Field name='poruka'
+                  <Field
+                    name='poruka'
                     label='Vasa poruka'
                     {...poruka}
                     component={renderFieldTextArea}
-                    className='form-control' />
+                    className='form-control'
+                  />
                 </div>
                 <div className='col-sm-12 mb-2'>
                   <button className='btn w-100 position-relative h-white' type='submit' id='kontakt'>Pošalji</button>
                 </div>
                 <small className='col-12'>* Obavezna polja</small>
-                {successMessage
-                  ? <div className='col-sm-12' >
+                {successMessage &&
+                  <div className='col-sm-12'>
                     <div className='alert alert-success mt-5'>
                       {successMessage}
                     </div>
-                  </div>
-                  : ''
-                }
-                {errorMessage
-                  ? <div className='col-sm-12' >
+                  </div>}
+                {errorMessage &&
+                  <div className='col-sm-12'>
                     <div className='alert alert-danger mt-5'>
                       {errorMessage}
                     </div>
-                  </div> : ''}
+                  </div>}
               </form>
             </div>
           </div>

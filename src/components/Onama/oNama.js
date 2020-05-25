@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import CountTo from 'react-count-to';
-import './o_nama.scss';
 import $ from 'jquery';
 
 import Crtica from '../../images/slash-min.png';
 import Breaker from '../../images/breaker-min.png';
+
+import './oNama.scss';
 
 const podaciONama = [
   { index: 1, p: 'Uspešno se bavimo podučavanjem stranih jezika i propremom za polaganje internacionalnih ispita.' },
@@ -17,9 +18,6 @@ const podaciONama = [
 ];
 
 class Onama extends Component {
-  componentDidMount () {
-    window.scrollTo(0, 0);
-  }
   oNama = (pod) => {
     return (
       <div className='col-md-6 d-flex' key={pod.index}>
@@ -30,6 +28,7 @@ class Onama extends Component {
       </div>
     );
   }
+
   render () {
     function isInView (el) {
       var rect = el.getBoundingClientRect();
